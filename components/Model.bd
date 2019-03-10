@@ -1,0 +1,284 @@
+classType components.Model
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_32, connection_34, connection_37, connection_40
+		}
+	}
+	methodBody getSfl {
+		outPin {
+			connection_17
+		}
+	}
+	methodBody getSrl {
+		outPin {
+			connection_23
+		}
+	}
+	methodBody getSrr {
+		outPin {
+			connection_19
+		}
+	}
+	methodBody getSfr {
+		outPin {
+			connection_21
+		}
+	}
+	methodArgumentIdentifier calc.vfr at (121, 275) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrr at (121, 435) {
+		label at (0, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vfl at (121, 185) {
+		label at (0, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrl at (121, 355) {
+		label at (0, -1)
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 225) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (251, 196) {
+		inPin connection_1 {
+			bendpoints (90, 0)
+		}
+		inPin connection_2 {
+			bendpoints (90, 0)
+		}
+		outPin {
+			connection_27
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 315) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 395) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 475) {
+		label at (0, -1)
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (251, 286) {
+		inPin connection_4 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_3 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_29
+		}
+	}
+	multiplication at (251, 366) {
+		inPin connection_5 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_6 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_31
+		}
+	}
+	multiplication at (251, 446) {
+		inPin connection_7 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_8 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_30
+		}
+	}
+	simpleIdentifier sfl at (391, 195) {
+		label at (0, -1)
+		inPin connection_33
+		outPin {
+			connection_28
+		}
+		sequenceCall {
+			inPin connection_32
+		}
+	}
+	simpleIdentifier sfr at (391, 285) {
+		label at (0, -1)
+		inPin connection_35
+		outPin {
+			connection_36
+		}
+		sequenceCall {
+			inPin connection_34
+		}
+	}
+	simpleIdentifier srl at (391, 365) {
+		label at (0, -1)
+		inPin connection_38
+		outPin {
+			connection_39
+		}
+		sequenceCall {
+			inPin connection_37
+		}
+	}
+	simpleIdentifier srr at (391, 445) {
+		label at (0, -1)
+		inPin connection_41
+		outPin {
+			connection_42
+		}
+		sequenceCall {
+			inPin connection_40
+		}
+	}
+	return at (661, 215) {
+		label at (0, 0)
+		inPin connection_18
+		sequenceCall {
+			inPin connection_17
+		}
+	}
+	simpleIdentifier sfl at (551, 215) {
+		label at (0, -1)
+		inPin outPin {
+			connection_18
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (671, 455) {
+		label at (0, 0)
+		inPin connection_20
+		sequenceCall {
+			inPin connection_19
+		}
+	}
+	simpleIdentifier srr at (551, 455) {
+		label at (0, -1)
+		inPin outPin {
+			connection_20
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier sfr at (551, 295) {
+		label at (0, -1)
+		inPin outPin {
+			connection_22
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (661, 295) {
+		label at (0, 0)
+		inPin connection_22
+		sequenceCall {
+			inPin connection_21
+		}
+	}
+	return at (671, 375) {
+		label at (0, 0)
+		inPin connection_24
+		sequenceCall {
+			inPin connection_23
+		}
+	}
+	simpleIdentifier srl at (551, 375) {
+		label at (0, -1)
+		inPin outPin {
+			connection_24
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (341, 186) {
+		inPin connection_28 {
+			bendpoints (0, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_27
+		outPin {
+			connection_33
+		}
+	}
+	addition at (341, 276) {
+		inPin connection_36 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_29
+		outPin {
+			connection_35
+		}
+	}
+	addition at (341, 356) {
+		inPin connection_39 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_31
+		outPin {
+			connection_38
+		}
+	}
+	addition at (341, 436) {
+		inPin connection_42 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_30
+		outPin {
+			connection_41
+		}
+	}
+}

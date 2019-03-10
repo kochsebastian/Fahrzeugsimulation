@@ -1,0 +1,62 @@
+
+\input{ads/header}
+
+%\makeglossaries
+%\input{ads/glossary}
+
+\begin{document}
+%
+%	% Deckblatt
+%	\begin{spacing}{1}
+%		\input{ads/deckblatt}
+%	\end{spacing}
+%	\newpage
+
+
+	\pagestyle{plain}		% nur Seitenzahlen im Fuß
+	
+	%\RedeclareSectionCommand[beforeskip=\kapitelabstand]{chapter} % stellt Abstand vor Kapitelüberschriften ein
+
+	% Inhaltsverzeichnis
+	\begin{spacing}{1.1}
+		\begingroup
+		
+			% auskommentieren für Seitenzahlen unter Inhaltsverzeichnis
+			\renewcommand*{\chapterpagestyle}{empty}
+			\pagestyle{empty}
+			
+			%\setcounter{tocdepth}{1}
+			%für die Anzeige von Unterkapiteln im Inhaltsverzeichnis
+			\setcounter{tocdepth}{2}
+			
+		%	\tableofcontents
+			\clearpage
+		\endgroup
+	\end{spacing}
+	\newpage
+	
+	\pagenumbering{Roman}
+
+	
+
+	\pagenumbering{arabic}
+	
+	\pagestyle{headings}		% Kolumnentitel im Kopf, Seitenzahlen im Fuß
+
+	% Kapitel 1
+	\input{content/Kapitel1.tex}
+	
+
+		
+	% Abschlussbewertung
+%	\input{content/Abschlussbewertung.tex}	
+	
+	% Glossar
+%	\printglossaries %[style=altlist,title=\langglossar]
+	
+	% sonstiger Anhang
+	\clearpage
+%	\appendix
+%	\input{ads/appendix}
+	
+\end{document}
