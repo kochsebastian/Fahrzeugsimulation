@@ -7,6 +7,8 @@ vfl_t = [tv vfl];
 vrr_t = [tv vrr];
 
 
+
+
 % calculate radius
 rrl = (w ./ ((vrr./vrl) -1));
 rfl = sqrt(b^2 + rrl.^2);
@@ -14,6 +16,9 @@ rrr = w + rrl;
 rfr = sqrt(b^2 + rrr.^2);
 
 new_q = interp1q(tq,q,tv);
+new_q(isnan(new_q))=0;
+
+new_q_t =[tv new_q];
 
 
 subplot(4,1,1);
