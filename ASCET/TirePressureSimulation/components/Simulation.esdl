@@ -10,6 +10,11 @@ static class Simulation {
 	real srl;
 	real srr;
 	real sfr;
+	real rand;
+	RandomGenerator RandomGenerator_instance_2;
+	SOS SOS_instance;
+	characteristic boolean status_tire = false;
+
 
 	@generated("blockdiagram")
 	@thread
@@ -19,5 +24,15 @@ static class Simulation {
 		srl = Model_instance.getSrl(); // Main/calc 3
 		srr = Model_instance.getSrr(); // Main/calc 4
 		sfr = Model_instance.getSfr(); // Main/calc 5
+		rand = RandomGenerator_instance_2.calc(10.0); // Main/calc 6
+		if (status_tire) {
+			
+				SOS_instance.calc(true, Globals.d_T, 0.8); // Main/calc 7/if-then 1
+		
+				
+			
+			
+			
+		} // Main/calc 7
 	}
 }

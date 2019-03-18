@@ -4,7 +4,7 @@
     <PropertySet name="WorkspaceHandling">
       <Property name="OpenMode" type="StringProperty">LastExperiment</Property>
       <Property name="DefaultExperiment" type="StringProperty" />
-      <Property name="LastWorkspaceLocation" type="StringProperty">\\MAC\Home\Desktop\TirePressureSim\experiments\Workspaces\TireSimulation_PC\TireSimulation_PC.eew</Property>
+      <Property name="LastWorkspaceLocation" type="StringProperty">\\MAC\Home\Desktop\TirePressureSim\ASCET\TirePressureSimulation\experiments\Workspaces\TireSimulation_PC\TireSimulation_PC.eew</Property>
     </PropertySet>
     <PropertySet name="ETargetINTECRIO">
       <PropertySet name="Options">

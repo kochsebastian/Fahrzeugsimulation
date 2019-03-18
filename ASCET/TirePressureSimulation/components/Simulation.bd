@@ -2,7 +2,7 @@ classType components.Simulation
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_5, connection_7, connection_9, connection_11, connection_13
+			connection_5, connection_7, connection_9, connection_11, connection_13, connection_20, connection_29
 		}
 	}
 	complexIdentifier Model_instance at (331, 211) size (14, 8) {
@@ -21,7 +21,7 @@ blockdiagramSpecification Main {
 				bendpoints (80, 0), (80, -10)
 			}
 			argumentPin my_dT at (left, 4) connection_1 {
-				bendpoints (60, 0), (60, -70)
+				bendpoints (60, 0), (60, -60)
 			}
 			sequenceCall at (-50, -30) {
 				inPin connection_5
@@ -60,7 +60,7 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	simpleIdentifier components.Globals.d_T at (151, 325) {
+	simpleIdentifier components.Globals.d_T at (151, 315) {
 		label at (0, -1)
 		inPin outPin {
 			connection_1
@@ -139,6 +139,90 @@ blockdiagramSpecification Main {
 		}
 		outPin sequenceCall {
 			inPin connection_13
+		}
+	}
+	literal Numeric "10.0" at (181, 443) size (49, 0) {
+		outPin {
+			connection_19
+		}
+	}
+	simpleIdentifier rand at (561, 415) {
+		label at (0, -1)
+		inPin connection_21 {
+			bendpoints (30, 0), (30, 10)
+		}
+		outPin sequenceCall {
+			inPin connection_20
+		}
+	}
+	complexIdentifier RandomGenerator_instance_2 at (341, 401) size (14, 8) {
+		label at (0, 1)
+		methodCall components.RandomGenerator.calc {
+			argumentPin set_vel at (left, 0) connection_19 {
+				bendpoints (50, 0), (50, -40)
+			}
+			returnPin at (right, 0) {
+				connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (31, 535) {
+		label at (0, 19)
+		inPin outPin {
+			connection_35
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	if at (121, 491) {
+		inPin connection_40
+		ifControlFlowOutPin {
+			connection_37
+		}
+		sequenceCall at (-10, -20) {
+			inPin connection_29
+		}
+	}
+	complexIdentifier SOS_instance at (341, 551) size (9, 6) {
+		label at (0, 1)
+		methodCall components.SOS.calc {
+			argumentPin in_status at (left, 0) connection_38 {
+				bendpoints (130, 0)
+			}
+			argumentPin my_dT at (left, 1) connection_35 {
+				bendpoints (60, 0), (60, 30)
+			}
+			argumentPin time at (left, 2) connection_36 {
+				bendpoints (20, 0), (20, -20)
+			}
+			sequenceCall at (-50, -30) {
+				inPin connection_37 {
+					bendpoints (0, 10), (110, 10)
+				}
+			}
+		}
+	}
+	literal Numeric "0.8" at (121, 593) size (49, 0) {
+		outPin {
+			connection_36
+		}
+	}
+	literal Boolean "true" at (151, 543) size (49, 0) {
+		outPin {
+			connection_38
+		}
+	}
+	simpleIdentifier status_tire at (41, 495) {
+		label at (0, -1)
+		outPin {
+			connection_40
+		}
+		sequenceCall {
+			inPin
 		}
 	}
 }
