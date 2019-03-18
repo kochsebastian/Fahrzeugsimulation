@@ -1,0 +1,6 @@
+classType components.SOS_upper
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active
+	}
+}

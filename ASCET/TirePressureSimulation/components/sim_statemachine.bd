@@ -1,0 +1,50 @@
+classType components.sim_statemachine
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_2, connection_8, connection_1
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (131, 315) {
+		label at (0, -1)
+		inPin outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier SOS_state_instance at (341, 371) size (36, 15) {
+		label at (0, 1)
+		methodCall components.SOS_state.sOS_stateStatemachineTrigger {
+			methodVoidPin at (top, 20) sequenceCall at (-14, -36) {
+				inPin connection_1
+			}
+		}
+		elementCall (components.SOS_state.myDT) {
+			argumentPin at (left, 0) connection_3 {
+				bendpoints (0, 30), (150, 30)
+			}
+			sequenceCall {
+				inPin connection_2
+			}
+		}
+		elementCall (components.SOS_state.aktiv) {
+			argumentPin at (left, 11) connection_5 {
+				bendpoints (60, 0), (60, 40)
+			}
+			sequenceCall {
+				inPin connection_8
+			}
+		}
+	}
+	simpleIdentifier failure at (171, 445) {
+		label at (0, -1)
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}
