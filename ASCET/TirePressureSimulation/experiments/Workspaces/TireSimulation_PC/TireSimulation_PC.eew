@@ -13,10 +13,17 @@
     </Item>
   </PluginData>
   <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
-    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="ID24f00a05-5e67-4b9a-966c-fb953aa31fd7" path="\\MAC\Home\Desktop\TirePressureSim\ASCET\TirePressureSimulation\experiments\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" hintPath="..\..\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" />
+<<<<<<< HEAD
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="IDe9216cd0-c2fa-4bb3-a629-b1043242cc6d" path="\\MAC\Home\Desktop\TirePressureSim\ASCET\TirePressureSimulation\experiments\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" hintPath="..\..\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" />
   </RecentExperiments>
   <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
-    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID32a9c577-3eeb-4a87-a89d-9f027da235cb" Created="2019-03-10T16:18:22.371Z" LastOpened="2019-03-18T16:08:29.144Z" LastSaved="2019-03-18T16:08:28.001Z" />
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID32a9c577-3eeb-4a87-a89d-9f027da235cb" Created="2019-03-10T16:18:22.371Z" LastOpened="2019-03-19T11:03:20.931Z" LastSaved="2019-03-19T11:03:20.772Z" />
+=======
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="IDd584374f-75e4-42a3-8bf7-bf5980cfc8d0" path="C:\Users\Anne\Documents\GPuS\TirePressureSimRepo\TirePressureSim\ASCET\TirePressureSimulation\experiments\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" hintPath="..\..\Experiments\system\TireSimulation_PC\TireSimulation_PC.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID32a9c577-3eeb-4a87-a89d-9f027da235cb" Created="2019-03-10T16:18:22.371Z" LastOpened="2019-03-19T10:59:39.200Z" LastSaved="2019-03-19T10:56:43.690Z" />
+>>>>>>> master
     <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID99710c26-2e71-4b3d-8934-d00659a15409" Created="3.7.6.132" LastSaved="3.7.6.132" MinRequired="3.3.1" />
   </WorkspaceInfo>
 </Workspace>
