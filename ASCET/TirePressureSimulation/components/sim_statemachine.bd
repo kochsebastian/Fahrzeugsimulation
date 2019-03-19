@@ -5,7 +5,7 @@ blockdiagramSpecification Main {
 			connection_2, connection_8, connection_1
 		}
 	}
-	simpleIdentifier components.Globals.d_T at (131, 315) {
+	simpleIdentifier components.Globals.d_T at (71, 135) {
 		label at (0, -1)
 		inPin outPin {
 			connection_3
@@ -14,7 +14,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	complexIdentifier SOS_state_instance at (341, 371) size (36, 15) {
+	complexIdentifier SOS_state_instance at (281, 191) size (36, 15) {
 		label at (0, 1)
 		methodCall components.SOS_state.sOS_stateStatemachineTrigger {
 			methodVoidPin at (top, 20) sequenceCall at (-14, -36) {
@@ -38,7 +38,7 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	simpleIdentifier failure at (171, 445) {
+	simpleIdentifier failure at (111, 265) {
 		label at (0, -1)
 		outPin {
 			connection_5

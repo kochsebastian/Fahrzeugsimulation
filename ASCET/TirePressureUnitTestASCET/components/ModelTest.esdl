@@ -37,6 +37,7 @@ static class ModelTest {
 		vfl = 10.0;
 		vrl = 10.0;
 		m.calc(vfr, vrr, vfl, vrl, myDT);
+<<<<<<< HEAD
 	}*/
 	
 	@Test
@@ -45,4 +46,7 @@ static class ModelTest {
 	}
 
 	
+=======
+	}
+>>>>>>> master
 }

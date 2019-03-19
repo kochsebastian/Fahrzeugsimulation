@@ -56,7 +56,7 @@
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
-		         /* programm id */ 2936037348
+		         /* programm id */ 3061859833
 		         /* target id   */ 7
 		         /*             */ 0 2 0
 		    /end TP_BLOB
@@ -88,7 +88,11 @@
 		/begin CHARACTERISTIC components.Simulation.vfr
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347A4
+=======
+			/* ecu address        */ 0x4341E4
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -102,7 +106,11 @@
 		/begin CHARACTERISTIC components.Simulation.vfl
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347A0
+=======
+			/* ecu address        */ 0x4341E0
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -116,7 +124,11 @@
 		/begin CHARACTERISTIC components.Simulation.vrr
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347AC
+=======
+			/* ecu address        */ 0x4341EC
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -130,7 +142,11 @@
 		/begin CHARACTERISTIC components.Simulation.vrl
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347A8
+=======
+			/* ecu address        */ 0x4341E8
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -144,7 +160,11 @@
 		/begin CHARACTERISTIC components.Simulation.status_tire
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347B0
+=======
+			/* ecu address        */ 0x4341F0
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U8
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -159,7 +179,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.a
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347B8
+=======
+			/* ecu address        */ 0x4341F8
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -173,7 +197,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.m
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347BC
+=======
+			/* ecu address        */ 0x4341FC
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -187,7 +215,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.crop
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347B4
+=======
+			/* ecu address        */ 0x4341F4
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -201,7 +233,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.c
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347BA
+=======
+			/* ecu address        */ 0x4341FA
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -215,7 +251,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.seed
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4347BE
+=======
+			/* ecu address        */ 0x4341FE
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -229,7 +269,11 @@
 		/begin CHARACTERISTIC components.sim_statemachine.failure
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
 			/* ecu address        */ 0x4520AC
+=======
+			/* ecu address        */ 0x451040
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U8
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -249,7 +293,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434104
+=======
+			ECU_ADDRESS 0x434004
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 6
 			/end IF_DATA
@@ -263,7 +311,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x43410C
+=======
+			ECU_ADDRESS 0x43400C
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 7
 			/end IF_DATA
@@ -277,7 +329,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434110
+=======
+			ECU_ADDRESS 0x434010
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 8
 			/end IF_DATA
@@ -291,7 +347,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434108
+=======
+			ECU_ADDRESS 0x434008
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 9
 			/end IF_DATA
@@ -305,7 +365,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434100
+=======
+			ECU_ADDRESS 0x434000
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 10
 			/end IF_DATA
@@ -319,7 +383,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434114
+=======
+			ECU_ADDRESS 0x4341AC
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 4
 			/end IF_DATA
@@ -333,7 +401,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434118
+=======
+			ECU_ADDRESS 0x4341B0
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 5
 			/end IF_DATA
@@ -347,7 +419,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x43411C
+=======
+			ECU_ADDRESS 0x4341B4
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 6
 			/end IF_DATA
@@ -361,7 +437,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434120
+=======
+			ECU_ADDRESS 0x4341B8
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 7
 			/end IF_DATA
@@ -375,7 +455,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434124
+=======
+			ECU_ADDRESS 0x434014
+>>>>>>> master
 			MATRIX_DIM 100 1 1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 0
@@ -388,9 +472,15 @@
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
+<<<<<<< HEAD
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x4342B4
+=======
+			/* lower limit        */ -2147483648
+			/* upper limit        */ 2147483647
+			ECU_ADDRESS 0x4341A8
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 1
 			/end IF_DATA
@@ -404,7 +494,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x4342B8
+=======
+			ECU_ADDRESS 0x4341A4
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 2
 			/end IF_DATA
@@ -416,10 +510,16 @@
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
+<<<<<<< HEAD
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
 			ECU_ADDRESS 0x4342BC
 			MATRIX_DIM 100 1 1
+=======
+			/* lower limit        */ -2147483648
+			/* upper limit        */ 2147483647
+			ECU_ADDRESS 0x4341BC
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 1 1000 0
 			/end IF_DATA
@@ -547,7 +647,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1009
+<<<<<<< HEAD
 			ECU_ADDRESS 0x434784
+=======
+			ECU_ADDRESS 0x4341C0
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 1 1000 5
 			/end IF_DATA
@@ -561,7 +665,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 4
+<<<<<<< HEAD
 			ECU_ADDRESS 0x4520A9
+=======
+			ECU_ADDRESS 0x45103D
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 0
 			/end IF_DATA
@@ -575,7 +683,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
 			ECU_ADDRESS 0x4520A0
+=======
+			ECU_ADDRESS 0x451034
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 1
 			/end IF_DATA
@@ -589,7 +701,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
 			ECU_ADDRESS 0x45209C
+=======
+			ECU_ADDRESS 0x451030
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 2
 			/end IF_DATA
@@ -603,7 +719,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x452094
+=======
+			ECU_ADDRESS 0x451024
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 3
 			/end IF_DATA
@@ -617,7 +737,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
 			ECU_ADDRESS 0x452090
+=======
+			ECU_ADDRESS 0x451020
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 4
 			/end IF_DATA
@@ -631,7 +755,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
 			ECU_ADDRESS 0x4520A4
+=======
+			ECU_ADDRESS 0x451038
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 5
 			/end IF_DATA
@@ -645,7 +773,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
 			ECU_ADDRESS 0x452098
+=======
+			ECU_ADDRESS 0x451028
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 6
 			/end IF_DATA
@@ -659,10 +791,28 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
+<<<<<<< HEAD
 			ECU_ADDRESS 0x4520A8
+=======
+			ECU_ADDRESS 0x45103C
+>>>>>>> master
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 7
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.sim_statemachine.SOS_state_instance.statelocation
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x45102C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 8
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -813,6 +963,7 @@
 				components.sim_statemachine.SOS_state_instance.myDT
 				components.sim_statemachine.SOS_state_instance.run
 				components.sim_statemachine.SOS_state_instance.sm
+				components.sim_statemachine.SOS_state_instance.statelocation
 				components.sim_statemachine.SOS_state_instance.status
 				components.sim_statemachine.SOS_state_instance.x
 				components.sim_statemachine.SOS_state_instance.y
@@ -951,6 +1102,7 @@
 				components.sim_statemachine.SOS_state_instance.myDT
 				components.sim_statemachine.SOS_state_instance.run
 				components.sim_statemachine.SOS_state_instance.sm
+				components.sim_statemachine.SOS_state_instance.statelocation
 				components.sim_statemachine.SOS_state_instance.status
 				components.sim_statemachine.SOS_state_instance.x
 				components.sim_statemachine.SOS_state_instance.y
