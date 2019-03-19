@@ -1,10 +1,7 @@
 package components;
-
 import assertLib.Assert;
-
 import components.Globals;
 import components.SOS_state;
-
 static class Test_SOS_state {
 	integer counter;
 	SOS_state sos;
