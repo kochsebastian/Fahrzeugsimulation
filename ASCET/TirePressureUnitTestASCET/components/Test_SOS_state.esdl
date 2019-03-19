@@ -1,99 +1,125 @@
 package components;
-
 import assertLib.Assert;
-
 import components.Globals;
 import components.SOS_state;
-
 static class Test_SOS_state {
-	integer counter = 0;
-	SOS_state sos;
-
-	@Test
-	public void checkAllStates(){
-		sos.myDT = 0.1;
-		sos.aktiv = true;
-		
-		while(counter<8){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 1.0, 0.1);
-		
-		while(counter<17){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 2.0, 0.1);
-
-		while(counter<24){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 1.0, 0.1);
-		
-		while(counter<32){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 2.0, 0.1);
-		
-		while(counter<40){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 1.0, 0.1);
-		
-		while(counter<48){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 2.0, 0.1);
-	
-		while(counter<64){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 3.0, 0.1);
-		
-		while(counter<80){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 4.0, 0.1);
-		
-		while(counter<96){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 3.0, 0.1);
-		
-		while(counter<112){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 4.0, 0.1);
-		
-		while(counter<128){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 3.0, 0.1);
-		
-		while(counter<144){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 4.0, 0.1);
-		
-		counter = 0;
-		
-		while(counter<16){
-			sos.sOS_stateStatemachineTrigger();
-			counter = counter + 1;
-		}
-		Assert.assertNear(sos.statelocation, 1.0, 0.1);
-		
-		
-	}
+    integer counter = 0;
+    SOS_state sos;
+//Der Wechsel eines States beansprucht 10ms zusätzlich
+//wurde in die Berechnung der Zeit für die Stati aufgenommen
+    @Test
+    public void checkAllStates(){
+        sos.myDT = 0.1;
+        sos.aktiv = true;
+        
+        while(counter<9){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);
+        
+        while(counter<18){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+        while(counter<27){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);
+        
+        while(counter<36){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+        
+        while(counter<45){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);
+        
+        while(counter<54){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+    
+        while(counter<71){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 3.0, 0.1);
+        
+        while(counter<88){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 4.0, 0.1);
+        
+        while(counter<105){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 3.0, 0.1);
+        
+        while(counter<122){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 4.0, 0.1);
+        
+        while(counter<139){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 3.0, 0.1);
+        
+        while(counter<156){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 4.0, 0.1);
+        while(counter<165){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);
+        
+        while(counter<174){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+        while(counter<183){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);    
+        
+        while(counter<192){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+        
+        while(counter<201){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 1.0, 0.1);
+        
+        while(counter<210){
+            sos.sOS_stateStatemachineTrigger();
+            counter = counter + 1;
+        }
+        Assert.assertNear(sos.statelocation, 2.0, 0.1);
+        
+        //aktiv = true
+        
+        counter = 0;
+        
+    }
 }

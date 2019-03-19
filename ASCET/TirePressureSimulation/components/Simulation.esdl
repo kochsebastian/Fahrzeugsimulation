@@ -12,11 +12,11 @@ static class Simulation {
 	real rand;
 	RandomGenerator RandomGenerator_instance_2;
 	characteristic boolean status_tire = false;
-	Model Model_instance;
 	real diff_sfl;
 	real diff_sfr;
 	real diff_srr;
 	real diff_srl;
+	Model Model_instance;
 
 	@generated("blockdiagram")
 	@thread

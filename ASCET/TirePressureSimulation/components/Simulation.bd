@@ -2,13 +2,13 @@ classType components.Simulation
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_20, connection_26, connection_28, connection_30, connection_32, connection_34, connection_36, connection_38, connection_40, connection_42
+			connection_20, connection_64, connection_66, connection_68, connection_70, connection_72, connection_74, connection_76, connection_78, connection_80
 		}
 	}
 	simpleIdentifier components.Globals.d_T at (231, 245) {
 		label at (0, -1)
 		inPin outPin {
-			connection_22
+			connection_65
 		}
 		sequenceCall {
 			inPin
@@ -17,7 +17,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier vfr at (211, 75) {
 		label at (0, -1)
 		outPin {
-			connection_27
+			connection_60
 		}
 		sequenceCall {
 			inPin
@@ -26,7 +26,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier vfl at (211, 115) {
 		label at (0, -1)
 		outPin {
-			connection_25
+			connection_61
 		}
 		sequenceCall {
 			inPin
@@ -35,7 +35,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier vrr at (211, 155) {
 		label at (0, -1)
 		outPin {
-			connection_24
+			connection_63
 		}
 		sequenceCall {
 			inPin
@@ -44,7 +44,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier vrl at (211, 195) {
 		label at (0, -1)
 		outPin {
-			connection_23
+			connection_62
 		}
 		sequenceCall {
 			inPin
@@ -52,36 +52,38 @@ blockdiagramSpecification Main {
 	}
 	simpleIdentifier sfl at (581, 65) {
 		label at (0, -1)
-		inPin connection_29 {
-			bendpoints (0, -20), (90, -20)
+		inPin connection_67 {
+			bendpoints (20, 0), (20, -50)
 		}
 		outPin sequenceCall {
-			inPin connection_28
+			inPin connection_66
 		}
 	}
 	simpleIdentifier srl at (661, 105) {
 		label at (0, -1)
-		inPin connection_31 {
-			bendpoints (0, -10), (170, -10)
+		inPin connection_69 {
+			bendpoints (60, 0), (60, -20)
 		}
 		outPin sequenceCall {
-			inPin connection_30
+			inPin connection_68
 		}
 	}
-	simpleIdentifier srr at (571, 145) {
+	simpleIdentifier srr at (621, 145) {
 		label at (0, -1)
-		inPin connection_33
+		inPin connection_71 {
+			bendpoints (40, 0), (40, 10)
+		}
 		outPin sequenceCall {
-			inPin connection_32
+			inPin connection_70
 		}
 	}
 	simpleIdentifier sfr at (651, 175) {
 		label at (0, -1)
-		inPin connection_35 {
-			bendpoints (0, 10)
+		inPin connection_73 {
+			bendpoints (50, 0), (50, 30)
 		}
 		outPin sequenceCall {
-			inPin connection_34
+			inPin connection_72
 		}
 	}
 	literal Numeric "10.0" at (181, 443) size (49, 0) {
@@ -112,127 +114,127 @@ blockdiagramSpecification Main {
 			}
 		}
 	}
-	complexIdentifier Model_instance at (341, 101) size (14, 17) {
+	simpleIdentifier diff_sfl at (621, 215) {
+		label at (0, -1)
+		inPin connection_75 {
+			bendpoints (40, 0), (40, 60)
+		}
+		outPin sequenceCall {
+			inPin connection_74
+		}
+	}
+	simpleIdentifier diff_sfr at (641, 275) {
+		label at (0, -1)
+		inPin connection_77 {
+			bendpoints (50, 0), (50, 110)
+		}
+		outPin sequenceCall {
+			inPin connection_76
+		}
+	}
+	simpleIdentifier diff_srr at (601, 315) {
+		label at (0, -1)
+		inPin connection_79 {
+			bendpoints (30, 0), (30, 140)
+		}
+		outPin sequenceCall {
+			inPin connection_78
+		}
+	}
+	simpleIdentifier diff_srl at (531, 355) {
+		label at (0, -1)
+		inPin connection_81 {
+			bendpoints (0, 80), (-10, 80)
+		}
+		outPin sequenceCall {
+			inPin connection_80
+		}
+	}
+	complexIdentifier Model_instance at (391, 111) size (14, 9) {
 		label at (0, 1)
 		methodCall components.Model.calc {
-			argumentPin vfr at (left, 0) connection_27 {
-				bendpoints (40, 0), (40, 30)
+			argumentPin vfr at (left, 0) connection_60 {
+				bendpoints (0, 20), (130, 20)
 			}
-			argumentPin vrr at (left, 2) connection_25 {
-				bendpoints (40, 0), (40, 10)
+			argumentPin vrr at (left, 1) connection_61 {
+				bendpoints (130, 0)
 			}
-			argumentPin vfl at (left, 4) connection_24 {
-				bendpoints (30, 0), (30, -10)
+			argumentPin vfl at (left, 2) connection_63 {
+				bendpoints (0, -10), (130, -10)
 			}
-			argumentPin vrl at (left, 6) connection_23 {
-				bendpoints (50, 0), (50, -30)
+			argumentPin vrl at (left, 3) connection_62 {
+				bendpoints (0, -30), (130, -30)
 			}
-			argumentPin my_dT at (left, 13) connection_22 {
-				bendpoints (20, 0), (20, -10)
+			argumentPin my_dT at (left, 4) connection_65 {
+				bendpoints (50, 0), (50, -90)
 			}
 			sequenceCall at (-50, -30) {
-				inPin connection_26
+				inPin connection_64
 			}
 		}
 		methodCall components.Model.getSfl {
 			returnPin at (right, 0) {
-				connection_29
+				connection_67
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getSrl {
-			returnPin at (right, 2) {
-				connection_31
+			returnPin at (right, 1) {
+				connection_69
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getSrr {
-			returnPin at (right, 4) {
-				connection_33
+			returnPin at (right, 2) {
+				connection_71
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getSfr {
-			returnPin at (right, 6) {
-				connection_35
+			returnPin at (right, 3) {
+				connection_73
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getDiff_sfl {
-			returnPin at (right, 8) {
-				connection_37
+			returnPin at (right, 4) {
+				connection_75
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getDiff_sfr {
-			returnPin at (right, 10) {
-				connection_39
+			returnPin at (right, 5) {
+				connection_77
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getDiff_srr {
-			returnPin at (right, 12) {
-				connection_41
+			returnPin at (right, 6) {
+				connection_79
 			}
 			sequenceCall {
 				inPin
 			}
 		}
 		methodCall components.Model.getDiff_srl {
-			returnPin at (right, 14) {
-				connection_43
+			returnPin at (right, 7) {
+				connection_81
 			}
 			sequenceCall {
 				inPin
 			}
-		}
-	}
-	simpleIdentifier diff_sfl at (621, 215) {
-		label at (0, -1)
-		inPin connection_37 {
-			bendpoints (0, 10), (130, 10)
-		}
-		outPin sequenceCall {
-			inPin connection_36
-		}
-	}
-	simpleIdentifier diff_sfr at (641, 275) {
-		label at (0, -1)
-		inPin connection_39 {
-			bendpoints (0, 10), (110, 10), (110, 70)
-		}
-		outPin sequenceCall {
-			inPin connection_38
-		}
-	}
-	simpleIdentifier diff_srr at (601, 315) {
-		label at (0, -1)
-		inPin connection_41 {
-			bendpoints (60, 0), (60, 90)
-		}
-		outPin sequenceCall {
-			inPin connection_40
-		}
-	}
-	simpleIdentifier diff_srl at (531, 355) {
-		label at (0, -1)
-		inPin connection_43 {
-			bendpoints (20, 0), (20, 110)
-		}
-		outPin sequenceCall {
-			inPin connection_42
 		}
 	}
 }
