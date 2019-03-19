@@ -6,10 +6,10 @@ class Model {
 	real sfr;
 	real srl;
 	real srr;
-	s_array mem_dist[100];
-	integer read_index = 0;
-	real mem_sfl;
-	integer write_index = 0;
+	RingBuffer buffer_sfl;
+	RingBuffer buffer_sfr;
+	RingBuffer buffer_srr;
+	RingBuffer buffer_srl;
 
 	@generated("blockdiagram")
 	public void calc(real in vfr, real in vrr, real in vfl, real in vrl, real in my_dT) {
@@ -17,13 +17,11 @@ class Model {
 		sfr = (sfr + (vfr * my_dT)); // Main/calc 2
 		srl = (srl + (vrl * my_dT)); // Main/calc 3
 		srr = (srr + (vrr * my_dT)); // Main/calc 4
-		mem_dist[write_index] = sfl; // Main/calc 6
-		write_index = write_index + 1;
-		if(write_index >= 99){
-			write_index = 0;
-		}
 		
-		mem_sfl = mem_dist[read_index]; // Main/calc 5
+		buffer_sfl.put(sfl);
+		buffer_sfr.put(sfr);
+		buffer_srl.put(srl);
+		buffer_srr.put(srr);
 		
 	}
 
@@ -46,4 +44,6 @@ class Model {
 	public real getSfr() {
 		return sfr; // Main/getSfr 1
 	}
+	
+	
 }

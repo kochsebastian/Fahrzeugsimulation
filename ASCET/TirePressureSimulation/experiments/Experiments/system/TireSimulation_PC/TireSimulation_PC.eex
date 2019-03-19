@@ -35,7 +35,7 @@
     <scriptRecorderFiles xsi:type="ETAS.EE.Data.ScriptRecorderFileListType" />
   </ExperimentFiles>
   <ExperimentInfo xsi:type="ETAS.EE.Data.ExperimentInfoType">
-    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID31057a7c-244c-484f-9eba-71d554de271b" Created="2019-03-10T16:18:23.891Z" LastOpened="2019-03-18T16:08:29.450Z" LastSaved="2019-03-18T16:08:26.500Z" />
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID31057a7c-244c-484f-9eba-71d554de271b" Created="2019-03-10T16:18:23.891Z" LastOpened="2019-03-19T11:03:21.346Z" LastSaved="2019-03-19T11:03:20.120Z" />
     <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID91c99182-0cf2-4771-877b-61da0556a672" Created="3.7.6.132" LastSaved="3.7.6.132" MinRequired="3.7" />
   </ExperimentInfo>
   <ExperimentEventHooks xsi:type="ETAS.EE.Data.EventHooksListType" />

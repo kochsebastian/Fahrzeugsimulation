@@ -12,9 +12,10 @@ static class ModelTest {
 	real vfl;
 	real vrl;
 	Model m;
+	SOS_state smi;
 
 	
-	@Test
+/*	@Test
 	public void distanceIncreasing(){
 		myDT = 1.0;
 		vfr = 10.0;
@@ -36,8 +37,12 @@ static class ModelTest {
 		vfl = 10.0;
 		vrl = 10.0;
 		m.calc(vfr, vrr, vfl, vrl, myDT);
-	}
+	}*/
 	
+	@Test
+	public void statmachine(){
+		smi.myDT = 0.01;
+	}
 
 	
 }

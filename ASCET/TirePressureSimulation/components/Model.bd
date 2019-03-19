@@ -2,7 +2,7 @@ classType components.Model
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_32, connection_34, connection_37, connection_40, connection_47, connection_52
+			connection_32, connection_34, connection_37, connection_40
 		}
 	}
 	methodBody getSfl {
@@ -279,58 +279,6 @@ blockdiagramSpecification Main {
 		inPin connection_30
 		outPin {
 			connection_41
-		}
-	}
-	simpleIdentifier mem_dist at (531, 531) {
-		label at (0, 1)
-		inPin connection_53
-		inPin INDEX_SET_X connection_49 {
-			bendpoints (270, 0)
-		}
-		inPin INDEX_GET_X connection_46 {
-			bendpoints (0, -60), (40, -60)
-		}
-		outPin {
-			connection_48
-		}
-		sequenceCall {
-			inPin connection_52
-		}
-	}
-	simpleIdentifier read_index at (481, 655) {
-		label at (0, -1)
-		inPin outPin {
-			connection_46
-		}
-		sequenceCall {
-			inPin
-		}
-	}
-	simpleIdentifier mem_sfl at (661, 535) {
-		label at (0, -1)
-		inPin connection_48 {
-			bendpoints (30, 0), (30, -10)
-		}
-		outPin sequenceCall {
-			inPin connection_47
-		}
-	}
-	simpleIdentifier write_index at (231, 585) {
-		label at (0, -1)
-		inPin outPin {
-			connection_49
-		}
-		sequenceCall {
-			inPin
-		}
-	}
-	simpleIdentifier sfl at (351, 545) {
-		label at (0, -1)
-		inPin outPin {
-			connection_53
-		}
-		sequenceCall {
-			inPin
 		}
 	}
 }
