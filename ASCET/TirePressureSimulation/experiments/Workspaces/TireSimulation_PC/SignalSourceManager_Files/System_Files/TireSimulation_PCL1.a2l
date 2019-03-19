@@ -52,7 +52,7 @@
 		/begin IF_DATA E_TARGET
 		    /begin SOURCE "Task0"
 		        /* type   */ 3
-		        /* period */ 10
+		        /* period */ 5000
 		        QP_BLOB 1
 		    /end SOURCE
 		    /begin TP_BLOB
@@ -88,7 +88,11 @@
 		/begin CHARACTERISTIC components.Simulation.vfr
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347A4
+=======
 			/* ecu address        */ 0x4341E4
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -102,7 +106,11 @@
 		/begin CHARACTERISTIC components.Simulation.vfl
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347A0
+=======
 			/* ecu address        */ 0x4341E0
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -116,7 +124,11 @@
 		/begin CHARACTERISTIC components.Simulation.vrr
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347AC
+=======
 			/* ecu address        */ 0x4341EC
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -130,7 +142,11 @@
 		/begin CHARACTERISTIC components.Simulation.vrl
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347A8
+=======
 			/* ecu address        */ 0x4341E8
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -144,7 +160,11 @@
 		/begin CHARACTERISTIC components.Simulation.status_tire
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347B0
+=======
 			/* ecu address        */ 0x4341F0
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U8
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -159,7 +179,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.a
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347B8
+=======
 			/* ecu address        */ 0x4341F8
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -173,7 +197,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.m
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347BC
+=======
 			/* ecu address        */ 0x4341FC
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -187,7 +215,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.crop
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347B4
+=======
 			/* ecu address        */ 0x4341F4
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_R32
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -201,7 +233,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.c
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347BA
+=======
 			/* ecu address        */ 0x4341FA
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -215,7 +251,11 @@
 		/begin CHARACTERISTIC components.Simulation.RandomGenerator_instance_2.seed
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4347BE
+=======
 			/* ecu address        */ 0x4341FE
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U16
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -229,7 +269,11 @@
 		/begin CHARACTERISTIC components.sim_statemachine.failure
 			/* long identifier    */ ""
 			/* type               */ VALUE
+<<<<<<< HEAD
+			/* ecu address        */ 0x4520AC
+=======
 			/* ecu address        */ 0x451040
+>>>>>>> master
 			/* record layout      */ STANDARD_VALUE_U8
 			/* max diff value     */ 0.0
 			/* conversion         */ esdl_ident
@@ -249,7 +293,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434104
+=======
 			ECU_ADDRESS 0x434004
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 6
 			/end IF_DATA
@@ -263,7 +311,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x43410C
+=======
 			ECU_ADDRESS 0x43400C
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 7
 			/end IF_DATA
@@ -277,7 +329,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434110
+=======
 			ECU_ADDRESS 0x434010
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 8
 			/end IF_DATA
@@ -291,7 +347,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434108
+=======
 			ECU_ADDRESS 0x434008
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 9
 			/end IF_DATA
@@ -305,7 +365,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434100
+=======
 			ECU_ADDRESS 0x434000
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 4 1001 0 1001 0 1001 0 1000 10
 			/end IF_DATA
@@ -319,9 +383,13 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434114
+=======
 			ECU_ADDRESS 0x4341AC
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 0
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 4
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -333,9 +401,13 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434118
+=======
 			ECU_ADDRESS 0x4341B0
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 1
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 5
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -347,9 +419,13 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x43411C
+=======
 			ECU_ADDRESS 0x4341B4
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 2
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 6
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -361,13 +437,17 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434120
+=======
 			ECU_ADDRESS 0x4341B8
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 3
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 7
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Simulation.Model_instance.mem_dist
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfl.buffer
 			/* long identifier    */ ""
 			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
@@ -375,28 +455,38 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434124
+=======
 			ECU_ADDRESS 0x434014
+>>>>>>> master
 			MATRIX_DIM 100 1 1
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 4
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 0
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Simulation.Model_instance.read_index
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfl.c
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
+<<<<<<< HEAD
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4342B4
+=======
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
 			ECU_ADDRESS 0x4341A8
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 5
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 1
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Simulation.Model_instance.mem_sfl
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfl.swap
 			/* long identifier    */ ""
 			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
@@ -404,23 +494,148 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x4342B8
+=======
 			ECU_ADDRESS 0x4341A4
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 6
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 0 1000 2
 			/end IF_DATA
 		/end MEASUREMENT
 
-		/begin MEASUREMENT components.Simulation.Model_instance.write_index
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfr.buffer
 			/* long identifier    */ ""
-			/* datatype           */ SLONG
+			/* datatype           */ FLOAT32_IEEE
 			/* conversion         */ esdl_ident
 			/* resolution         */ 1
 			/* accuracy           */ 100.0
+<<<<<<< HEAD
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4342BC
+			MATRIX_DIM 100 1 1
+=======
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
 			ECU_ADDRESS 0x4341BC
+>>>>>>> master
 			/begin IF_DATA E_TARGET
-			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 0 1000 7
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 1 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfr.c
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x43444C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 1 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_sfr.swap
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x434450
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 1 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srr.buffer
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4345EC
+			MATRIX_DIM 100 1 1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 2 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srr.c
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x43477C
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 2 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srr.swap
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x434780
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 2 1000 2
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srl.buffer
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x434454
+			MATRIX_DIM 100 1 1
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 3 1000 0
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srl.c
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4345E4
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 3 1000 1
+			/end IF_DATA
+		/end MEASUREMENT
+
+		/begin MEASUREMENT components.Simulation.Model_instance.buffer_srl.swap
+			/* long identifier    */ ""
+			/* datatype           */ FLOAT32_IEEE
+			/* conversion         */ esdl_ident
+			/* resolution         */ 1
+			/* accuracy           */ 100.0
+			/* lower limit        */ -3.4028234663852886E+38
+			/* upper limit        */ 3.4028234663852886E+38
+			ECU_ADDRESS 0x4345E8
+			/begin IF_DATA E_TARGET
+			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 6 1001 0 1001 0 1001 0 1000 0 1000 3 1000 2
 			/end IF_DATA
 		/end MEASUREMENT
 
@@ -432,7 +647,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1009
+<<<<<<< HEAD
+			ECU_ADDRESS 0x434784
+=======
 			ECU_ADDRESS 0x4341C0
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 0 1000 1 1000 5
 			/end IF_DATA
@@ -446,7 +665,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 4
+<<<<<<< HEAD
+			ECU_ADDRESS 0x4520A9
+=======
 			ECU_ADDRESS 0x45103D
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 0
 			/end IF_DATA
@@ -460,7 +683,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
+			ECU_ADDRESS 0x4520A0
+=======
 			ECU_ADDRESS 0x451034
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 1
 			/end IF_DATA
@@ -474,7 +701,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
+			ECU_ADDRESS 0x45209C
+=======
 			ECU_ADDRESS 0x451030
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 2
 			/end IF_DATA
@@ -488,7 +719,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x452094
+=======
 			ECU_ADDRESS 0x451024
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 3
 			/end IF_DATA
@@ -502,7 +737,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -3.4028234663852886E+38
 			/* upper limit        */ 3.4028234663852886E+38
+<<<<<<< HEAD
+			ECU_ADDRESS 0x452090
+=======
 			ECU_ADDRESS 0x451020
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 4
 			/end IF_DATA
@@ -516,7 +755,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
+			ECU_ADDRESS 0x4520A4
+=======
 			ECU_ADDRESS 0x451038
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 5
 			/end IF_DATA
@@ -530,7 +773,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ -2147483648
 			/* upper limit        */ 2147483647
+<<<<<<< HEAD
+			ECU_ADDRESS 0x452098
+=======
 			ECU_ADDRESS 0x451028
+>>>>>>> master
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 6
 			/end IF_DATA
@@ -544,7 +791,11 @@
 			/* accuracy           */ 100.0
 			/* lower limit        */ 0
 			/* upper limit        */ 1
+<<<<<<< HEAD
+			ECU_ADDRESS 0x4520A8
+=======
 			ECU_ADDRESS 0x45103C
+>>>>>>> master
 			BIT_MASK 0x1
 			/begin IF_DATA E_TARGET
 			    KP_BLOB 0xFFFFFFFF 0xFFFFFFFF 5 1001 0 1001 0 1001 2 1000 0 1000 7
@@ -627,14 +878,52 @@
 		/begin FUNCTION components.Simulation.Model_instance
 			""
 			/begin LOC_MEASUREMENT
-				components.Simulation.Model_instance.mem_dist
-				components.Simulation.Model_instance.mem_sfl
-				components.Simulation.Model_instance.read_index
 				components.Simulation.Model_instance.sfl
 				components.Simulation.Model_instance.sfr
 				components.Simulation.Model_instance.srl
 				components.Simulation.Model_instance.srr
-				components.Simulation.Model_instance.write_index
+			/end LOC_MEASUREMENT
+			/begin SUB_FUNCTION
+				components.Simulation.Model_instance.buffer_sfl
+				components.Simulation.Model_instance.buffer_sfr
+				components.Simulation.Model_instance.buffer_srr
+				components.Simulation.Model_instance.buffer_srl
+			/end SUB_FUNCTION
+		/end FUNCTION
+		
+		/begin FUNCTION components.Simulation.Model_instance.buffer_sfl
+			""
+			/begin LOC_MEASUREMENT
+				components.Simulation.Model_instance.buffer_sfl.buffer
+				components.Simulation.Model_instance.buffer_sfl.c
+				components.Simulation.Model_instance.buffer_sfl.swap
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.Simulation.Model_instance.buffer_sfr
+			""
+			/begin LOC_MEASUREMENT
+				components.Simulation.Model_instance.buffer_sfr.buffer
+				components.Simulation.Model_instance.buffer_sfr.c
+				components.Simulation.Model_instance.buffer_sfr.swap
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.Simulation.Model_instance.buffer_srr
+			""
+			/begin LOC_MEASUREMENT
+				components.Simulation.Model_instance.buffer_srr.buffer
+				components.Simulation.Model_instance.buffer_srr.c
+				components.Simulation.Model_instance.buffer_srr.swap
+			/end LOC_MEASUREMENT
+		/end FUNCTION
+		
+		/begin FUNCTION components.Simulation.Model_instance.buffer_srl
+			""
+			/begin LOC_MEASUREMENT
+				components.Simulation.Model_instance.buffer_srl.buffer
+				components.Simulation.Model_instance.buffer_srl.c
+				components.Simulation.Model_instance.buffer_srl.swap
 			/end LOC_MEASUREMENT
 		/end FUNCTION
 		
@@ -728,14 +1017,52 @@
 		/begin GROUP components.Simulation.Model_instance
 			""
 			/begin REF_MEASUREMENT
-				components.Simulation.Model_instance.mem_dist
-				components.Simulation.Model_instance.mem_sfl
-				components.Simulation.Model_instance.read_index
 				components.Simulation.Model_instance.sfl
 				components.Simulation.Model_instance.sfr
 				components.Simulation.Model_instance.srl
 				components.Simulation.Model_instance.srr
-				components.Simulation.Model_instance.write_index
+			/end REF_MEASUREMENT
+			/begin SUB_GROUP
+				components.Simulation.Model_instance.buffer_sfl
+				components.Simulation.Model_instance.buffer_sfr
+				components.Simulation.Model_instance.buffer_srr
+				components.Simulation.Model_instance.buffer_srl
+			/end SUB_GROUP
+		/end GROUP
+		
+		/begin GROUP components.Simulation.Model_instance.buffer_sfl
+			""
+			/begin REF_MEASUREMENT
+				components.Simulation.Model_instance.buffer_sfl.buffer
+				components.Simulation.Model_instance.buffer_sfl.c
+				components.Simulation.Model_instance.buffer_sfl.swap
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.Simulation.Model_instance.buffer_sfr
+			""
+			/begin REF_MEASUREMENT
+				components.Simulation.Model_instance.buffer_sfr.buffer
+				components.Simulation.Model_instance.buffer_sfr.c
+				components.Simulation.Model_instance.buffer_sfr.swap
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.Simulation.Model_instance.buffer_srr
+			""
+			/begin REF_MEASUREMENT
+				components.Simulation.Model_instance.buffer_srr.buffer
+				components.Simulation.Model_instance.buffer_srr.c
+				components.Simulation.Model_instance.buffer_srr.swap
+			/end REF_MEASUREMENT
+		/end GROUP
+		
+		/begin GROUP components.Simulation.Model_instance.buffer_srl
+			""
+			/begin REF_MEASUREMENT
+				components.Simulation.Model_instance.buffer_srl.buffer
+				components.Simulation.Model_instance.buffer_srl.c
+				components.Simulation.Model_instance.buffer_srl.swap
 			/end REF_MEASUREMENT
 		/end GROUP
 		
