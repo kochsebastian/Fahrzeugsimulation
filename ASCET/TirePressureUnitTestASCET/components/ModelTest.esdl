@@ -37,7 +37,4 @@ static class ModelTest {
 		vrl = 10.0;
 		m.calc(vfr, vrr, vfl, vrl, myDT);
 	}
-	
-
-	
 }

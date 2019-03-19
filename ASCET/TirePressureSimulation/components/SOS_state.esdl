@@ -18,6 +18,7 @@ class SOS_state {
 	integer run;
 	@set
 	private boolean aktiv;
+	public real statelocation;
 
 	@generated("statemachine")
 	public void sOS_stateStatemachineTrigger() triggers SOS_stateStatemachine;
@@ -31,6 +32,7 @@ class SOS_state {
 				status = 1;
 				duration = 0.0;
 				y = 0;
+				statelocation = 1.0;
 			}
 			static {
 				duration = duration + myDT;
@@ -44,6 +46,7 @@ class SOS_state {
 				duration = 0.0;
 				x = x + 1;
 				run = run + 1;
+				statelocation = 2.0;
 			}
 			static {
 				duration = duration + myDT;
@@ -58,6 +61,7 @@ class SOS_state {
 				status = 1;
 				duration = 0.0;
 				x = 0;
+				statelocation = 3.0;
 			}
 			static {
 				duration = duration + myDT;
@@ -70,6 +74,7 @@ class SOS_state {
 				status = 0;
 				duration = 0.0;
 				y = y + 1;
+				statelocation = 4.0;
 			}
 			static {
 				duration = duration + myDT;
