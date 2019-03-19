@@ -2,7 +2,7 @@ classType components.Simulation
 blockdiagramSpecification Main {
 	methodBody calc {
 		outPin active {
-			connection_20, connection_64, connection_66, connection_68, connection_70, connection_72, connection_74, connection_76, connection_78, connection_80
+			connection_20, connection_66, connection_68, connection_70, connection_72, connection_74, connection_76, connection_78, connection_80, connection_85
 		}
 	}
 	simpleIdentifier components.Globals.d_T at (231, 245) {
@@ -17,25 +17,25 @@ blockdiagramSpecification Main {
 	simpleIdentifier vfr at (211, 75) {
 		label at (0, -1)
 		outPin {
-			connection_60
+			connection_82
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier vfl at (211, 115) {
+	simpleIdentifier vfl at (211, 155) {
 		label at (0, -1)
 		outPin {
-			connection_61
+			connection_84
 		}
 		sequenceCall {
 			inPin
 		}
 	}
-	simpleIdentifier vrr at (211, 155) {
+	simpleIdentifier vrr at (211, 115) {
 		label at (0, -1)
 		outPin {
-			connection_63
+			connection_83
 		}
 		sequenceCall {
 			inPin
@@ -44,7 +44,7 @@ blockdiagramSpecification Main {
 	simpleIdentifier vrl at (211, 195) {
 		label at (0, -1)
 		outPin {
-			connection_62
+			connection_86
 		}
 		sequenceCall {
 			inPin
@@ -153,23 +153,23 @@ blockdiagramSpecification Main {
 	complexIdentifier Model_instance at (391, 111) size (14, 9) {
 		label at (0, 1)
 		methodCall components.Model.calc {
-			argumentPin vfr at (left, 0) connection_60 {
-				bendpoints (0, 20), (130, 20)
+			argumentPin vfr at (left, 0) connection_82 {
+				bendpoints (60, 0), (60, 40)
 			}
-			argumentPin vrr at (left, 1) connection_61 {
-				bendpoints (130, 0)
+			argumentPin vrr at (left, 1) connection_83 {
+				bendpoints (60, 0), (60, 10)
 			}
-			argumentPin vfl at (left, 2) connection_63 {
-				bendpoints (0, -10), (130, -10)
+			argumentPin vfl at (left, 2) connection_84 {
+				bendpoints (60, 0), (60, -20)
 			}
-			argumentPin vrl at (left, 3) connection_62 {
-				bendpoints (0, -30), (130, -30)
+			argumentPin vrl at (left, 3) connection_86 {
+				bendpoints (70, 0), (70, -50)
 			}
 			argumentPin my_dT at (left, 4) connection_65 {
 				bendpoints (50, 0), (50, -90)
 			}
 			sequenceCall at (-50, -30) {
-				inPin connection_64
+				inPin connection_85
 			}
 		}
 		methodCall components.Model.getSfl {
