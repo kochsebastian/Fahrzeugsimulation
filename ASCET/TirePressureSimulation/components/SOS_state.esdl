@@ -88,6 +88,7 @@ class SOS_state {
 				run = 0;
 				x = 0;
 				y = 0;
+				statelocation = 0.0;
 			}
 			transition aktiv == true to beep_short;
 		}
