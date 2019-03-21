@@ -1,0 +1,22 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Program%20Files%20(x86)/Common%20Files/ETAS/Experiment%20Environment/3.7/Schemas/EE.Data.Workspace.xsd" xsi:type="ETAS.EE.Data.WorkspaceType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID891e09a8-e408-4834-b461-d71fb0157465" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID8bbae3e5-74b0-4b79-b6e3-2d21fdac2dbe" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID7b1c955c-e743-48d3-8ce0-08f621eb9be3" pluginID="SignalSourceManager" rootFolder="SignalSourceManager_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID6dd4430c-1111-440d-9e09-d4548825ba7e" type="" name="SignalSourcesData" file="SignalSources.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="ID064e8afc-d793-4336-802f-31307824bdaf" path="\\MAC\Home\Documents\ASCET\AscetTireSim\experiments\Experiments\system\AscetTireSim_PC\AscetTireSim_PC.eex" hintPath="..\..\Experiments\system\AscetTireSim_PC\AscetTireSim_PC.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID346a2df7-09e6-4b1a-88ab-53e277b87c61" Created="2019-03-19T15:06:35.331Z" LastOpened="2019-03-19T15:06:35.331Z" LastSaved="2019-03-19T15:07:13.970Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID3623200f-12a2-4f44-978f-7f551ac5b6f8" Created="3.7.6.132" LastSaved="3.7.6.132" MinRequired="3.3.1" />
+  </WorkspaceInfo>
+</Workspace>

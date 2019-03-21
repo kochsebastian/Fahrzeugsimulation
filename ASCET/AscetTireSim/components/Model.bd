@@ -1,0 +1,476 @@
+classType components.Model
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_32, connection_34, connection_37, connection_40, connection_94, connection_96, connection_98, connection_100, connection_102, connection_104, connection_106, connection_108, connection_110, connection_112, connection_114, connection_116
+		}
+	}
+	methodArgumentIdentifier calc.vfr at (121, 275) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrr at (121, 435) {
+		label at (0, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vfl at (121, 185) {
+		label at (0, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrl at (121, 355) {
+		label at (0, -1)
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 225) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (251, 196) {
+		inPin connection_1 {
+			bendpoints (90, 0)
+		}
+		inPin connection_2 {
+			bendpoints (90, 0)
+		}
+		outPin {
+			connection_27
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 315) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 395) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.my_dT at (121, 475) {
+		label at (0, -1)
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (251, 286) {
+		inPin connection_4 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_3 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_29
+		}
+	}
+	multiplication at (251, 366) {
+		inPin connection_5 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_6 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_31
+		}
+	}
+	multiplication at (251, 446) {
+		inPin connection_7 {
+			bendpoints (40, 0), (40, 10)
+		}
+		inPin connection_8 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_30
+		}
+	}
+	simpleIdentifier sfl at (391, 195) {
+		label at (0, -1)
+		inPin connection_33
+		outPin {
+			connection_28
+		}
+		sequenceCall {
+			inPin connection_32
+		}
+	}
+	simpleIdentifier sfr at (391, 285) {
+		label at (0, -1)
+		inPin connection_35
+		outPin {
+			connection_36
+		}
+		sequenceCall {
+			inPin connection_34
+		}
+	}
+	simpleIdentifier srl at (391, 365) {
+		label at (0, -1)
+		inPin connection_38
+		outPin {
+			connection_39
+		}
+		sequenceCall {
+			inPin connection_37
+		}
+	}
+	simpleIdentifier srr at (391, 445) {
+		label at (0, -1)
+		inPin connection_41
+		outPin {
+			connection_42
+		}
+		sequenceCall {
+			inPin connection_40
+		}
+	}
+	addition at (341, 186) {
+		inPin connection_28 {
+			bendpoints (0, -40), (-140, -40), (-140, -10)
+		}
+		inPin connection_27
+		outPin {
+			connection_33
+		}
+	}
+	addition at (341, 276) {
+		inPin connection_36 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_29
+		outPin {
+			connection_35
+		}
+	}
+	addition at (341, 356) {
+		inPin connection_39 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_31
+		outPin {
+			connection_38
+		}
+	}
+	addition at (341, 436) {
+		inPin connection_42 {
+			bendpoints (0, -30), (-120, -30), (-120, -10)
+		}
+		inPin connection_30
+		outPin {
+			connection_41
+		}
+	}
+	simpleIdentifier sfl at (121, 535) {
+		label at (0, -1)
+		inPin outPin {
+			connection_111
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier sfl_before at (341, 535) {
+		label at (0, -1)
+		inPin connection_95
+		outPin sequenceCall {
+			inPin connection_94
+		}
+	}
+	simpleIdentifier sfr at (121, 615) {
+		label at (0, -1)
+		inPin outPin {
+			connection_113
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier sfr_before at (341, 615) {
+		label at (0, -1)
+		inPin connection_97
+		outPin sequenceCall {
+			inPin connection_96
+		}
+	}
+	simpleIdentifier srl at (121, 695) {
+		label at (0, -1)
+		inPin outPin {
+			connection_115
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier srl_before at (341, 695) {
+		label at (0, -1)
+		inPin connection_99
+		outPin sequenceCall {
+			inPin connection_98
+		}
+	}
+	simpleIdentifier srr at (121, 775) {
+		label at (0, -1)
+		inPin outPin {
+			connection_117
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier srr_before at (341, 775) {
+		label at (0, -1)
+		inPin connection_101
+		outPin sequenceCall {
+			inPin connection_100
+		}
+	}
+	simpleIdentifier sfl at (521, 515) {
+		label at (0, -1)
+		inPin outPin {
+			connection_68
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier sfl_before at (521, 555) {
+		label at (0, -1)
+		inPin outPin {
+			connection_69
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (631, 526) {
+		inPin connection_68 {
+			bendpoints (60, 0)
+		}
+		inPin connection_69 {
+			bendpoints (30, 0), (30, -10)
+		}
+		outPin {
+			connection_103
+		}
+	}
+	simpleIdentifier delta_sfl at (711, 535) {
+		label at (0, -1)
+		inPin connection_103
+		outPin sequenceCall {
+			inPin connection_102
+		}
+	}
+	simpleIdentifier sfr at (521, 615) {
+		label at (0, -1)
+		inPin outPin {
+			connection_72
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (631, 626) {
+		inPin connection_72 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_76 {
+			bendpoints (30, 0), (30, -10)
+		}
+		outPin {
+			connection_105
+		}
+	}
+	simpleIdentifier delta_sfr at (711, 635) {
+		label at (0, -1)
+		inPin connection_105
+		outPin sequenceCall {
+			inPin connection_104
+		}
+	}
+	simpleIdentifier sfr_before at (521, 655) {
+		label at (0, -1)
+		inPin outPin {
+			connection_76
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier srl at (521, 705) {
+		label at (0, -1)
+		inPin outPin {
+			connection_77
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (631, 716) {
+		inPin connection_77 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_78 {
+			bendpoints (30, 0), (30, -10)
+		}
+		outPin {
+			connection_107
+		}
+	}
+	simpleIdentifier srl_before at (521, 745) {
+		label at (0, -1)
+		inPin outPin {
+			connection_78
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier delta_srl at (711, 725) {
+		label at (0, -1)
+		inPin connection_107
+		outPin sequenceCall {
+			inPin connection_106
+		}
+	}
+	simpleIdentifier srr at (521, 785) {
+		label at (0, -1)
+		inPin outPin {
+			connection_82
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier srr_before at (521, 835) {
+		label at (0, -1)
+		inPin outPin {
+			connection_81
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (631, 796) {
+		inPin connection_82 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_81 {
+			bendpoints (30, 0), (30, -20)
+		}
+		outPin {
+			connection_109
+		}
+	}
+	simpleIdentifier delta_srr at (711, 805) {
+		label at (0, -1)
+		inPin connection_109
+		outPin sequenceCall {
+			inPin connection_108
+		}
+	}
+	complexIdentifier RingBuffer_instance at (191, 531) size (9, 5) {
+		label at (0, 1)
+		methodCall components.RingBuffer.put {
+			argumentPin element at (left, 0) connection_111
+			sequenceCall at (-60, -30) {
+				inPin connection_110
+			}
+		}
+		methodCall components.RingBuffer.getLast {
+			returnPin at (right, 0) {
+				connection_95
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier RingBuffer_instance_2 at (191, 611) size (9, 5) {
+		label at (0, 1)
+		methodCall components.RingBuffer.put {
+			argumentPin element at (left, 0) connection_113
+			sequenceCall at (-60, -30) {
+				inPin connection_112
+			}
+		}
+		methodCall components.RingBuffer.getLast {
+			returnPin at (right, 0) {
+				connection_97
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier RingBuffer_instance_3 at (191, 691) size (9, 5) {
+		label at (0, 1)
+		methodCall components.RingBuffer.put {
+			argumentPin element at (left, 0) connection_115
+			sequenceCall at (-60, -30) {
+				inPin connection_114
+			}
+		}
+		methodCall components.RingBuffer.getLast {
+			returnPin at (right, 0) {
+				connection_99
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier RingBuffer_instance_4 at (191, 771) size (9, 5) {
+		label at (0, 1)
+		methodCall components.RingBuffer.put {
+			argumentPin element at (left, 0) connection_117
+			sequenceCall at (-50, -30) {
+				inPin connection_116
+			}
+		}
+		methodCall components.RingBuffer.getLast {
+			returnPin at (right, 0) {
+				connection_101
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+}

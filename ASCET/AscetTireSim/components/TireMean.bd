@@ -1,0 +1,72 @@
+classType components.TireMean
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_7
+		}
+	}
+	methodArgumentIdentifier calc.v1 at (251, 185) {
+		label at (-10, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.v3 at (251, 335) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.v2 at (251, 275) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (451, 196) {
+		inPin connection_2 {
+			bendpoints (80, 0), (80, 10)
+		}
+		inPin connection_3 {
+			bendpoints (70, 0), (70, -70)
+		}
+		inPin connection_4 {
+			bendpoints (80, 0), (80, -120)
+		}
+		outPin {
+			connection_6
+		}
+	}
+	division at (571, 216) {
+		inPin connection_6 {
+			bendpoints (0, 10)
+		}
+		inPin connection_5 {
+			bendpoints (20, 0), (20, -70)
+		}
+		outPin {
+			connection_8
+		}
+	}
+	literal Numeric "3.0" at (481, 303) size (49, 0) {
+		outPin {
+			connection_5
+		}
+	}
+	return at (691, 225) {
+		label at (0, 0)
+		inPin connection_8
+		sequenceCall {
+			inPin connection_7
+		}
+	}
+}

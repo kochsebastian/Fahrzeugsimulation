@@ -1,0 +1,87 @@
+classType components.CalcDiviation
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_8
+		}
+	}
+	return at (651, 155) {
+		label at (0, 0)
+		inPin connection_7 {
+			bendpoints (140, 0)
+		}
+		sequenceCall {
+			inPin connection_4 {
+				bendpoints (50, 0)
+			}
+		}
+	}
+	multiplication at (471, 136) {
+		inPin connection_12 {
+			bendpoints (110, 0), (110, 10)
+		}
+		inPin connection_5 {
+			bendpoints (100, 0), (100, -20)
+		}
+		outPin {
+			connection_7
+		}
+	}
+	literal Numeric "0.994" at (211, 173) size (49, 0) {
+		outPin {
+			connection_5
+		}
+	}
+	methodArgumentIdentifier calc.deflate at (141, 65) {
+		label at (0, -1)
+		outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	ifElse at (541, 71) {
+		inPin connection_9 {
+			bendpoints (210, 0), (210, 10)
+		}
+		ifControlFlowOutPin {
+			connection_4
+		}
+		elseControlFlowOutPin {
+			connection_10
+		}
+		sequenceCall {
+			inPin connection_8
+		}
+	}
+	methodArgumentIdentifier calc.v at (471, 225) {
+		label at (0, -1)
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (661, 215) {
+		label at (0, 0)
+		inPin connection_11 {
+			bendpoints (70, 0), (70, -10)
+		}
+		sequenceCall {
+			inPin connection_10 {
+				bendpoints (0, 90)
+			}
+		}
+	}
+	methodArgumentIdentifier calc.v at (211, 125) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

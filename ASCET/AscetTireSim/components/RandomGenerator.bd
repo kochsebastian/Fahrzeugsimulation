@@ -1,0 +1,256 @@
+classType components.RandomGenerator
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_76, connection_10, connection_13
+		}
+	}
+	simpleIdentifier a at (81, 225) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier m at (81, 315) {
+		label at (0, -1)
+		outPin {
+			connection_61, connection_39
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (261, 206) {
+		inPin connection_9 {
+			bendpoints (100, 0), (100, 10)
+		}
+		inPin connection_2
+		outPin {
+			connection_52
+		}
+	}
+	modulo at (441, 226) {
+		inPin connection_50
+		inPin connection_61 {
+			bendpoints (150, 0), (150, -20), (290, -20), (290, -70)
+		}
+		outPin {
+			connection_11
+		}
+	}
+	simpleIdentifier x at (81, 195) {
+		label at (0, -1)
+		inPin outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier x at (501, 235) {
+		label at (0, -1)
+		inPin connection_11
+		outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin connection_10
+		}
+	}
+	return at (971, 225) {
+		label at (0, 0)
+		inPin connection_48
+		sequenceCall {
+			inPin connection_13
+		}
+	}
+	typeConverter real at (561, 231) {
+		inPin connection_15
+		outPin {
+			connection_43
+		}
+	}
+	division at (541, 306) {
+		inPin connection_40 {
+			bendpoints (50, 0), (50, -10)
+		}
+		inPin connection_35 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_42
+		}
+	}
+	literal Numeric "2.0" at (461, 333) size (49, 0) {
+		outPin {
+			connection_35
+		}
+	}
+	typeConverter real at (381, 311) {
+		inPin connection_39
+		outPin {
+			connection_62, connection_40
+		}
+	}
+	subtraction at (661, 276) {
+		inPin connection_43 {
+			bendpoints (0, 40)
+		}
+		inPin connection_42 {
+			bendpoints (60, 0), (60, -20)
+		}
+		outPin {
+			connection_55
+		}
+	}
+	multiplication at (741, 246) {
+		inPin connection_56 {
+			bendpoints (360, 0), (360, 130)
+		}
+		inPin connection_55 {
+			bendpoints (0, -10), (40, -10)
+		}
+		outPin {
+			connection_58
+		}
+	}
+	methodArgumentIdentifier calc.set_vel at (171, 65) {
+		label at (0, -1)
+		outPin {
+			connection_49
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (911, 216) {
+		inPin connection_49 {
+			bendpoints (550, 0), (550, 150)
+		}
+		inPin connection_60 {
+			bendpoints (10, 0), (10, -20)
+		}
+		outPin {
+			connection_48
+		}
+	}
+	addition at (371, 216) {
+		inPin connection_52
+		inPin connection_51 {
+			bendpoints (250, 0)
+		}
+		outPin {
+			connection_50
+		}
+	}
+	simpleIdentifier c at (81, 265) {
+		label at (0, -1)
+		outPin {
+			connection_51
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.noiselevel at (171, 105) {
+		label at (0, -1)
+		outPin {
+			connection_54
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (301, 106) {
+		inPin connection_54
+		inPin connection_53 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_56
+		}
+	}
+	literal Numeric "2.0" at (211, 133) size (49, 0) {
+		outPin {
+			connection_53
+		}
+	}
+	division at (841, 246) {
+		inPin connection_58 {
+			bendpoints (60, 0)
+		}
+		inPin connection_62 {
+			bendpoints (20, 0), (20, 70), (420, 70)
+		}
+		outPin {
+			connection_60
+		}
+	}
+	typeConverter integer at (131, 491) {
+		inPin connection_82
+		outPin {
+			connection_83
+		}
+	}
+	typeConverter components.myint at (331, 561) {
+		inPin connection_85
+		outPin {
+			connection_78
+		}
+	}
+	literal Numeric "0" at (81, 543) size (49, 0) {
+		outPin {
+			connection_81
+		}
+	}
+	simpleIdentifier x at (61, 495) {
+		label at (0, -1)
+		inPin outPin {
+			connection_82
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (211, 506) {
+		inPin connection_83 {
+			bendpoints (20, 0), (20, 10)
+		}
+		inPin connection_81 {
+			bendpoints (30, 0), (30, -20)
+		}
+		outPin {
+			connection_80
+		}
+	}
+	simpleIdentifier x at (401, 565) {
+		label at (0, -1)
+		inPin connection_78
+		outPin sequenceCall {
+			inPin connection_84 {
+				bendpoints (10, 0), (10, 30)
+			}
+		}
+	}
+	if at (311, 511) {
+		inPin connection_80
+		ifControlFlowOutPin {
+			connection_84
+		}
+		sequenceCall {
+			inPin connection_76
+		}
+	}
+	methodArgumentIdentifier calc.mySeed at (201, 565) {
+		label at (0, -1)
+		outPin {
+			connection_85
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

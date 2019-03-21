@@ -1,0 +1,137 @@
+classType components.TireDeviation
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_13, connection_16, connection_23, connection_27, connection_8
+		}
+	}
+	methodArgumentIdentifier calc.v_mean at (21, 245) {
+		label at (0, -1)
+		outPin {
+			connection_17
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.v_single at (21, 95) {
+		label at (0, -1)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	division at (401, 196) {
+		inPin connection_3 {
+			bendpoints (20, 0), (20, 10)
+		}
+		inPin connection_19 {
+			bendpoints (10, 0), (10, -20), (230, -20)
+		}
+		outPin {
+			connection_26
+		}
+	}
+	subtraction at (211, 176) {
+		inPin connection_15 {
+			bendpoints (30, 0), (30, 80)
+		}
+		inPin connection_18 {
+			bendpoints (10, 0), (10, -50)
+		}
+		outPin {
+			connection_2
+		}
+	}
+	absolute at (321, 181) {
+		inPin connection_2
+		outPin {
+			connection_3
+		}
+	}
+	multiplication at (511, 216) {
+		inPin connection_26 {
+			bendpoints (70, 0)
+		}
+		inPin connection_6 {
+			bendpoints (60, 0), (60, -50)
+		}
+		outPin {
+			connection_28
+		}
+	}
+	literal Numeric "100.0" at (371, 283) size (49, 0) {
+		outPin {
+			connection_6
+		}
+	}
+	return at (751, 235) {
+		label at (0, 0)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_8
+		}
+	}
+	methodArgumentIdentifier calc.limit at (471, 325) {
+		label at (0, -1)
+		outPin {
+			connection_24
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greater at (651, 226) {
+		inPin connection_29
+		inPin connection_25 {
+			bendpoints (10, 0), (10, -40)
+		}
+		outPin {
+			connection_12
+		}
+	}
+	simpleIdentifier v at (111, 95) {
+		label at (0, -1)
+		inPin connection_14
+		outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin connection_13
+		}
+	}
+	simpleIdentifier mean at (121, 245) {
+		label at (0, -1)
+		inPin connection_17
+		outPin {
+			connection_19, connection_18
+		}
+		sequenceCall {
+			inPin connection_16
+		}
+	}
+	simpleIdentifier limit at (571, 285) {
+		label at (0, -1)
+		inPin connection_24 {
+			bendpoints (60, 0)
+		}
+		outPin {
+			connection_25
+		}
+		sequenceCall {
+			inPin connection_23
+		}
+	}
+	simpleIdentifier diff at (571, 225) {
+		label at (0, -1)
+		inPin connection_28
+		outPin {
+			connection_29
+		}
+		sequenceCall {
+			inPin connection_27
+		}
+	}
+}
