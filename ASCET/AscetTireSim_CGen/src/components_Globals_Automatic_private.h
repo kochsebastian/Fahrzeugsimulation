@@ -14,6 +14,10 @@
  * BEGIN: DEFINITION OF ACCESS MACROS
  ******************************************************************************/
 #define components_Globals_limit_VAL components_Globals_limit
+#define components_Globals_limit_RR_VAL components_Globals_limit_RR
+#define components_Globals_limit_RL_VAL components_Globals_limit_RL
+#define components_Globals_limit_FR_VAL components_Globals_limit_FR
+#define components_Globals_limit_FL_VAL components_Globals_limit_FL
 /* ****************************************************************************
  * END: DEFINITION OF ACCESS MACROS
  ******************************************************************************/

@@ -26,6 +26,10 @@ struct L1_components_Globals_Automatic_Obj {
 typedef struct {
 	ASDObjectHeader objectHeader;
 	scalarWrapper_Obj* limit;
+	scalarWrapper_Obj* limit_RR;
+	scalarWrapper_Obj* limit_RL;
+	scalarWrapper_Obj* limit_FR;
+	scalarWrapper_Obj* limit_FL;
 } L1_components_Globals_Automatic_Class;
 
 extern L1_components_Globals_Automatic_Class L1_components_Globals_Automatic_ClassObj;

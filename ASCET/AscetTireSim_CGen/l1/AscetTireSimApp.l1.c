@@ -17,12 +17,13 @@
  **/
 void initClass_L1_AscetTireSimApp (L1_AscetTireSimApp_Class* _ASCET_class)
 {
-    _ASCET_class->components_sim_statemachine_Automatic = initInstance_L1_components_sim_statemachine_Automatic();
+    _ASCET_class->runnableModels_sim_statemachine_Automatic = initInstance_L1_runnableModels_sim_statemachine_Automatic();
     _ASCET_class->interfaces_interfaces_Automatic = initInstance_L1_interfaces_interfaces_Automatic();
     _ASCET_class->components_Globals_Automatic = initInstance_L1_components_Globals_Automatic();
-    _ASCET_class->components_Simulation_Automatic = initInstance_L1_components_Simulation_Automatic();
-    _ASCET_class->components_Driver_Automatic = initInstance_L1_components_Driver_Automatic();
-    _ASCET_class->components_TirePressureMonitoring_Automatic = initInstance_L1_components_TirePressureMonitoring_Automatic();
+    _ASCET_class->runnableModels_Simulation_Automatic = initInstance_L1_runnableModels_Simulation_Automatic();
+    _ASCET_class->runnableModels_Driver_Automatic = initInstance_L1_runnableModels_Driver_Automatic();
+    _ASCET_class->runnableModels_TirePressureMonitoring_Automatic = initInstance_L1_runnableModels_TirePressureMonitoring_Automatic();
+    _ASCET_class->runnableModels_ResetFunctionality_Automatic = initInstance_L1_runnableModels_ResetFunctionality_Automatic();
 }
 
 /**
@@ -62,7 +63,7 @@ static MethodList _ClassMethodList = {
 struct L1_AscetTireSimApp_Obj* L1_AscetTireSimAppInstance = NULL;
 
 static ASDClassHeader L1_AscetTireSimApp_ClassHeader = {
-	0, 2, 0, 6, &_ObjectMethodList, &_ClassMethodList
+	0, 2, 0, 7, &_ObjectMethodList, &_ClassMethodList
 };
 
 L1_AscetTireSimApp_Class L1_AscetTireSimApp_ClassObj = {{1, {&L1_AscetTireSimApp_ClassHeader}, {0}}};

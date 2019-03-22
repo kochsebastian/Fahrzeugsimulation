@@ -1,0 +1,119 @@
+classType components.ErrorModule
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_8
+		}
+	}
+	return at (651, 155) {
+		label at (0, 0)
+		inPin connection_7 {
+			bendpoints (140, 0)
+		}
+		sequenceCall {
+			inPin connection_4 {
+				bendpoints (50, 0)
+			}
+		}
+	}
+	multiplication at (471, 136) {
+		inPin connection_12 {
+			bendpoints (110, 0), (110, 10)
+		}
+		inPin connection_16 {
+			bendpoints (40, 0), (40, -30)
+		}
+		outPin {
+			connection_7
+		}
+	}
+	methodArgumentIdentifier calc.deflate at (141, 65) {
+		label at (0, -1)
+		outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	ifElse at (541, 71) {
+		inPin connection_9 {
+			bendpoints (210, 0), (210, 10)
+		}
+		ifControlFlowOutPin {
+			connection_4
+		}
+		elseControlFlowOutPin {
+			connection_10
+		}
+		sequenceCall {
+			inPin connection_8
+		}
+	}
+	methodArgumentIdentifier calc.v at (471, 225) {
+		label at (0, -1)
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (661, 215) {
+		label at (0, 0)
+		inPin connection_11 {
+			bendpoints (70, 0), (70, -10)
+		}
+		sequenceCall {
+			inPin connection_10 {
+				bendpoints (0, 90)
+			}
+		}
+	}
+	methodArgumentIdentifier calc.v at (211, 125) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.error at (181, 205) {
+		label at (0, -1)
+		outPin {
+			connection_18
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (351, 176) {
+		inPin connection_15
+		inPin connection_17 {
+			bendpoints (20, 0), (20, -20)
+		}
+		outPin {
+			connection_16
+		}
+	}
+	literal Numeric "1.0" at (241, 173) size (49, 0) {
+		outPin {
+			connection_15
+		}
+	}
+	division at (261, 206) {
+		inPin connection_18
+		inPin connection_19 {
+			bendpoints (50, 0), (50, -30)
+		}
+		outPin {
+			connection_17
+		}
+	}
+	literal Numeric "100.0" at (111, 253) size (49, 0) {
+		outPin {
+			connection_19
+		}
+	}
+}

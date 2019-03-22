@@ -11,12 +11,13 @@
  *
  **/
 #include "a_basdef.h"
-#include "components_sim_statemachine_Automatic.l1.h"
+#include "runnableModels_sim_statemachine_Automatic.l1.h"
 #include "interfaces_interfaces_Automatic.l1.h"
 #include "components_Globals_Automatic.l1.h"
-#include "components_Simulation_Automatic.l1.h"
-#include "components_Driver_Automatic.l1.h"
-#include "components_TirePressureMonitoring_Automatic.l1.h"
+#include "runnableModels_Simulation_Automatic.l1.h"
+#include "runnableModels_Driver_Automatic.l1.h"
+#include "runnableModels_TirePressureMonitoring_Automatic.l1.h"
+#include "runnableModels_ResetFunctionality_Automatic.l1.h"
 
 /**
  * local variables object structure 
@@ -30,12 +31,13 @@ struct L1_AscetTireSimApp_Obj {
  **/
 typedef struct {
 	ASDObjectHeader objectHeader;
-	struct L1_components_sim_statemachine_Automatic_Obj* components_sim_statemachine_Automatic;
+	struct L1_runnableModels_sim_statemachine_Automatic_Obj* runnableModels_sim_statemachine_Automatic;
 	struct L1_interfaces_interfaces_Automatic_Obj* interfaces_interfaces_Automatic;
 	struct L1_components_Globals_Automatic_Obj* components_Globals_Automatic;
-	struct L1_components_Simulation_Automatic_Obj* components_Simulation_Automatic;
-	struct L1_components_Driver_Automatic_Obj* components_Driver_Automatic;
-	struct L1_components_TirePressureMonitoring_Automatic_Obj* components_TirePressureMonitoring_Automatic;
+	struct L1_runnableModels_Simulation_Automatic_Obj* runnableModels_Simulation_Automatic;
+	struct L1_runnableModels_Driver_Automatic_Obj* runnableModels_Driver_Automatic;
+	struct L1_runnableModels_TirePressureMonitoring_Automatic_Obj* runnableModels_TirePressureMonitoring_Automatic;
+	struct L1_runnableModels_ResetFunctionality_Automatic_Obj* runnableModels_ResetFunctionality_Automatic;
 } L1_AscetTireSimApp_Class;
 
 extern L1_AscetTireSimApp_Class L1_AscetTireSimApp_ClassObj;

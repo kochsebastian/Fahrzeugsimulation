@@ -12,10 +12,11 @@
 #include "etasVpOs.h"
 
 /* BEGIN process declarations */
-extern void components_Driver_Automatic_calc(void);
-extern void components_Simulation_Automatic_calc(void);
-extern void components_TirePressureMonitoring_Automatic_calc(void);
-extern void components_sim_statemachine_Automatic_calc(void);
+extern void runnableModels_Driver_Automatic_calc(void);
+extern void runnableModels_Simulation_Automatic_calc(void);
+extern void runnableModels_TirePressureMonitoring_Automatic_calc(void);
+extern void runnableModels_sim_statemachine_Automatic_calc(void);
+extern void runnableModels_ResetFunctionality_Automatic_calc(void);
 /* END process declarations */
 
 /* support for task monitoring */
@@ -37,10 +38,11 @@ TASK(Task0)
 	/* optional support for XCP hooks */
 	XCP_STIM_Task0
 	/* BEGIN process execution */
-	components_Driver_Automatic_calc();
-	components_Simulation_Automatic_calc();
-	components_TirePressureMonitoring_Automatic_calc();
-	components_sim_statemachine_Automatic_calc();
+	runnableModels_Driver_Automatic_calc();
+	runnableModels_Simulation_Automatic_calc();
+	runnableModels_TirePressureMonitoring_Automatic_calc();
+	runnableModels_sim_statemachine_Automatic_calc();
+	runnableModels_ResetFunctionality_Automatic_calc();
 	/* END process execution */
 	/* optional support for XCP hooks */
 	XCP_DAQ_Task0

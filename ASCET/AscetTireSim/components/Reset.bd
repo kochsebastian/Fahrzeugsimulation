@@ -1,0 +1,204 @@
+classType components.Reset
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_17
+		}
+	}
+	methodArgumentIdentifier calc.reset at (271, 65) {
+		label at (0, -1)
+		outPin {
+			connection_18
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrl at (111, 125) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vrr at (111, 215) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vfr at (111, 305) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.vfl at (111, 385) {
+		label at (0, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (211, 136) {
+		inPin connection_2 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_1 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_9
+		}
+	}
+	equal at (211, 226) {
+		inPin connection_3 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_4 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_10
+		}
+	}
+	equal at (211, 396) {
+		inPin connection_7 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_8 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_12
+		}
+	}
+	literal Numeric "0.0" at (111, 163) size (49, 0) {
+		outPin {
+			connection_1
+		}
+	}
+	literal Numeric "0.0" at (111, 253) size (49, 0) {
+		outPin {
+			connection_4
+		}
+	}
+	literal Numeric "0.0" at (111, 343) size (49, 0) {
+		outPin {
+			connection_5
+		}
+	}
+	equal at (211, 316) {
+		inPin connection_6 {
+			bendpoints (30, 0), (30, 10)
+		}
+		inPin connection_5 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_11
+		}
+	}
+	literal Numeric "0.0" at (111, 423) size (49, 0) {
+		outPin {
+			connection_8
+		}
+	}
+	and at (381, 256) {
+		inPin connection_9 {
+			bendpoints (110, 0), (110, 110)
+		}
+		inPin connection_10 {
+			bendpoints (90, 0), (90, 30)
+		}
+		inPin connection_11 {
+			bendpoints (90, 0), (90, -40)
+		}
+		inPin connection_12 {
+			bendpoints (110, 0), (110, -110)
+		}
+		outPin {
+			connection_14
+		}
+	}
+	ifElse at (541, 271) {
+		inPin connection_14
+		ifControlFlowOutPin {
+			connection_15
+		}
+		elseControlFlowOutPin {
+			connection_22
+		}
+		sequenceCall {
+			inPin connection_13 {
+				bendpoints (20, 0), (20, 160)
+			}
+		}
+	}
+	return at (731, 335) {
+		label at (0, 0)
+		inPin connection_21
+		sequenceCall {
+			inPin connection_15 {
+				bendpoints (60, 0), (60, 40)
+			}
+		}
+	}
+	ifElse at (441, 91) {
+		inPin connection_18 {
+			bendpoints (60, 0), (60, 30)
+		}
+		ifControlFlowOutPin {
+			connection_13
+		}
+		elseControlFlowOutPin {
+			connection_19
+		}
+		sequenceCall {
+			inPin connection_17
+		}
+	}
+	return at (661, 165) {
+		label at (0, 0)
+		inPin connection_20
+		sequenceCall {
+			inPin connection_19 {
+				bendpoints (90, 0), (90, 20)
+			}
+		}
+	}
+	literal Boolean "false" at (551, 163) size (49, 0) {
+		outPin {
+			connection_20
+		}
+	}
+	literal Boolean "true" at (481, 333) size (49, 0) {
+		outPin {
+			connection_21
+		}
+	}
+	literal Boolean "false" at (571, 393) size (49, 0) {
+		outPin {
+			connection_23
+		}
+	}
+	return at (681, 395) {
+		label at (0, 0)
+		inPin connection_23
+		sequenceCall {
+			inPin connection_22 {
+				bendpoints (0, 70)
+			}
+		}
+	}
+}

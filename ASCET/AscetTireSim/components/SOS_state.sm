@@ -20,7 +20,7 @@
         <outgoingTransitions xmi:id="_lrUEYEmOEemM3cLBE9NOJQ" specification="duration >= 1.6 &amp;&amp; y &lt; 3" target="_YTqt0EmOEemM3cLBE9NOJQ"/>
         <outgoingTransitions xmi:id="_k7I5wEmQEemM3cLBE9NOJQ" specification="duration >= 1.6 &amp;&amp; y >= 3" target="_RomkAEmOEemM3cLBE9NOJQ"/>
       </vertices>
-      <vertices xsi:type="sgraph:State" xmi:id="_B01hkEmUEemIKeTqWGpZEw" specification="entry{&#xD;&#xA;&#x9;run = 0;&#xD;&#xA;&#x9;x = 0;&#xD;&#xA;&#x9;y = 0;&#xD;&#xA;&#x9;statelocation = 0.0;&#xD;&#xA;}" name="off" incomingTransitions="_DUJ_QEmUEemIKeTqWGpZEw _DpYhAEmXEemIKeTqWGpZEw">
+      <vertices xsi:type="sgraph:State" xmi:id="_B01hkEmUEemIKeTqWGpZEw" specification="entry{&#xD;&#xA;&#x9;run = 0;&#xD;&#xA;&#x9;x = 0;&#xD;&#xA;&#x9;y = 0;&#xD;&#xA;&#x9;statelocation = 0.0;&#xD;&#xA;&#x9;status = 0;&#xD;&#xA;}" name="off" incomingTransitions="_DUJ_QEmUEemIKeTqWGpZEw _DpYhAEmXEemIKeTqWGpZEw">
         <outgoingTransitions xmi:id="_FbIS0EmUEemIKeTqWGpZEw" specification="aktiv == true" target="_RomkAEmOEemM3cLBE9NOJQ"/>
       </vertices>
     </regions>

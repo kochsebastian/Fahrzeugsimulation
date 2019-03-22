@@ -12,42 +12,47 @@ P_WORKING=//Mac/Home/Documents/ASCET/AscetTireSim_CGen
 P_TARGET=$(pathcnv SN,C:/ETAS/ASCET-DEVELOPER7.4/configuration/org.eclipse.osgi/50/0/.cp/platform)
 P_OBJ=obj
 
-P_ADDITIONAL_INCLUDE=$(pathcnv SN,//Mac/Home/Documents/ASCET/AscetTireSim_CGen/platform\
+P_ADDITIONAL_INCLUDE=$(pathcnv SN,//Mac/Home/Documents/ASCET/AscetTireSim_CGen/l1\
+    //Mac/Home/Documents/ASCET/AscetTireSim_CGen/platform\
     //Mac/Home/Documents/ASCET/AscetTireSim_CGen/include\
     //Mac/Home/Documents/ASCET/AscetTireSim_CGen/src\
-    //Mac/Home/Documents/ASCET/AscetTireSim_CGen/l1\
     C:/ETAS/ASCET-DEVELOPER7.4/plugins/com.etas.rta_osek_1.0.4/rta/VRTA/inc\
     C:/ETAS/ASCET-DEVELOPER7.4/configuration/org.eclipse.osgi/50/0/.cp/platform/rta_osek\
     //Mac/Home/Documents/ASCET/AscetTireSim_CGen/platform)
 ADDITIONAL_LIBS=$(pathcnv SN,//Mac/Home/Documents/ASCET/AscetTireSim_CGen/lib/ESDL_Linear_Interpolation_x86.lib)
 ADDITIONAL_OBJECTS=
 
-OBJECTS=$(P_OBJ)/components_TireMean_Automatic.o\
-    $(P_OBJ)/AscetTireSimApp_Automatic.o\
-    $(P_OBJ)/components_Simulation_Automatic.o\
-    $(P_OBJ)/interfaces_interfaces_Automatic.o\
-    $(P_OBJ)/components_sim_statemachine_Automatic.o\
-    $(P_OBJ)/components_TirePressureMonitoring_Automatic.o\
-    $(P_OBJ)/components_CalcDiviation_Automatic.o\
-    $(P_OBJ)/components_Globals_Automatic.o\
-    $(P_OBJ)/components_Driver_Automatic.o\
-    $(P_OBJ)/components_Model_Automatic.o\
-    $(P_OBJ)/components_TireDeviation_Automatic.o\
-    $(P_OBJ)/components_RandomGenerator_Automatic.o\
-    $(P_OBJ)/components_RingBuffer_Automatic.o\
-    $(P_OBJ)/components_SOS_state_Automatic.o\
-    $(P_OBJ)/AscetTireSimApp.l1.o\
-    $(P_OBJ)/components_sim_statemachine_Automatic.l1.o\
+OBJECTS=$(P_OBJ)/AscetTireSimApp.l1.o\
+    $(P_OBJ)/runnableModels_sim_statemachine_Automatic.l1.o\
     $(P_OBJ)/components_SOS_state_Automatic.l1.o\
     $(P_OBJ)/interfaces_interfaces_Automatic.l1.o\
     $(P_OBJ)/components_Globals_Automatic.l1.o\
-    $(P_OBJ)/components_Simulation_Automatic.l1.o\
+    $(P_OBJ)/runnableModels_Simulation_Automatic.l1.o\
     $(P_OBJ)/components_Model_Automatic.l1.o\
     $(P_OBJ)/components_RingBuffer_Automatic.l1.o\
     $(P_OBJ)/components_TireDeviation_Automatic.l1.o\
     $(P_OBJ)/components_RandomGenerator_Automatic.l1.o\
-    $(P_OBJ)/components_Driver_Automatic.l1.o\
-    $(P_OBJ)/components_TirePressureMonitoring_Automatic.l1.o\
+    $(P_OBJ)/runnableModels_Driver_Automatic.l1.o\
+    $(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.l1.o\
+    $(P_OBJ)/runnableModels_ResetFunctionality_Automatic.l1.o\
+    $(P_OBJ)/runnableModels_ResetStateMachine_Automatic.l1.o\
+    $(P_OBJ)/components_TireMean_Automatic.o\
+    $(P_OBJ)/components_Reset_Automatic.o\
+    $(P_OBJ)/AscetTireSimApp_Automatic.o\
+    $(P_OBJ)/interfaces_interfaces_Automatic.o\
+    $(P_OBJ)/components_ErrorModule_Automatic.o\
+    $(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.o\
+    $(P_OBJ)/runnableModels_ResetFunctionality_Automatic.o\
+    $(P_OBJ)/runnableModels_Driver_Automatic.o\
+    $(P_OBJ)/runnableModels_Simulation_Automatic.o\
+    $(P_OBJ)/runnableModels_sim_statemachine_Automatic.o\
+    $(P_OBJ)/components_Globals_Automatic.o\
+    $(P_OBJ)/components_Model_Automatic.o\
+    $(P_OBJ)/components_TireDeviation_Automatic.o\
+    $(P_OBJ)/components_RandomGenerator_Automatic.o\
+    $(P_OBJ)/components_RingBuffer_Automatic.o\
+    $(P_OBJ)/runnableModels_ResetStateMachine_Automatic.o\
+    $(P_OBJ)/components_SOS_state_Automatic.o\
     $(P_OBJ)/etasConfigTask.o\
     $(P_OBJ)/etasL1Isr.o\
     $(P_OBJ)/etasL1Task.o\
@@ -88,69 +93,13 @@ L1_DEFINES=L1_PROTOCOL
 include $(P_TARGET)/build.mk
 
 #### COMPILE RULES ####
-$(P_OBJ)/components_TireMean_Automatic.o: src/components_TireMean_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_TireMean_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TireMean_Automatic.o src/components_TireMean_Automatic.c)
-
-$(P_OBJ)/AscetTireSimApp_Automatic.o: src/AscetTireSimApp_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\AscetTireSimApp_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/AscetTireSimApp_Automatic.o src/AscetTireSimApp_Automatic.c)
-
-$(P_OBJ)/components_Simulation_Automatic.o: src/components_Simulation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Simulation_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Simulation_Automatic.o src/components_Simulation_Automatic.c)
-
-$(P_OBJ)/interfaces_interfaces_Automatic.o: src/interfaces_interfaces_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\interfaces_interfaces_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/interfaces_interfaces_Automatic.o src/interfaces_interfaces_Automatic.c)
-
-$(P_OBJ)/components_sim_statemachine_Automatic.o: src/components_sim_statemachine_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_sim_statemachine_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_sim_statemachine_Automatic.o src/components_sim_statemachine_Automatic.c)
-
-$(P_OBJ)/components_TirePressureMonitoring_Automatic.o: src/components_TirePressureMonitoring_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_TirePressureMonitoring_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TirePressureMonitoring_Automatic.o src/components_TirePressureMonitoring_Automatic.c)
-
-$(P_OBJ)/components_CalcDiviation_Automatic.o: src/components_CalcDiviation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_CalcDiviation_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_CalcDiviation_Automatic.o src/components_CalcDiviation_Automatic.c)
-
-$(P_OBJ)/components_Globals_Automatic.o: src/components_Globals_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Globals_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Globals_Automatic.o src/components_Globals_Automatic.c)
-
-$(P_OBJ)/components_Driver_Automatic.o: src/components_Driver_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Driver_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Driver_Automatic.o src/components_Driver_Automatic.c)
-
-$(P_OBJ)/components_Model_Automatic.o: src/components_Model_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Model_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Model_Automatic.o src/components_Model_Automatic.c)
-
-$(P_OBJ)/components_TireDeviation_Automatic.o: src/components_TireDeviation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_TireDeviation_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TireDeviation_Automatic.o src/components_TireDeviation_Automatic.c)
-
-$(P_OBJ)/components_RandomGenerator_Automatic.o: src/components_RandomGenerator_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_RandomGenerator_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_RandomGenerator_Automatic.o src/components_RandomGenerator_Automatic.c)
-
-$(P_OBJ)/components_RingBuffer_Automatic.o: src/components_RingBuffer_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_RingBuffer_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_RingBuffer_Automatic.o src/components_RingBuffer_Automatic.c)
-
-$(P_OBJ)/components_SOS_state_Automatic.o: src/components_SOS_state_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_SOS_state_Automatic.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_SOS_state_Automatic.o src/components_SOS_state_Automatic.c)
-
 $(P_OBJ)/AscetTireSimApp.l1.o: l1/AscetTireSimApp.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\AscetTireSimApp.l1.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/AscetTireSimApp.l1.o l1/AscetTireSimApp.l1.c)
 
-$(P_OBJ)/components_sim_statemachine_Automatic.l1.o: l1/components_sim_statemachine_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_sim_statemachine_Automatic.l1.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_sim_statemachine_Automatic.l1.o l1/components_sim_statemachine_Automatic.l1.c)
+$(P_OBJ)/runnableModels_sim_statemachine_Automatic.l1.o: l1/runnableModels_sim_statemachine_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_sim_statemachine_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_sim_statemachine_Automatic.l1.o l1/runnableModels_sim_statemachine_Automatic.l1.c)
 
 $(P_OBJ)/components_SOS_state_Automatic.l1.o: l1/components_SOS_state_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_SOS_state_Automatic.l1.c]
@@ -164,9 +113,9 @@ $(P_OBJ)/components_Globals_Automatic.l1.o: l1/components_Globals_Automatic.l1.c
 	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_Globals_Automatic.l1.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Globals_Automatic.l1.o l1/components_Globals_Automatic.l1.c)
 
-$(P_OBJ)/components_Simulation_Automatic.l1.o: l1/components_Simulation_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_Simulation_Automatic.l1.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Simulation_Automatic.l1.o l1/components_Simulation_Automatic.l1.c)
+$(P_OBJ)/runnableModels_Simulation_Automatic.l1.o: l1/runnableModels_Simulation_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_Simulation_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_Simulation_Automatic.l1.o l1/runnableModels_Simulation_Automatic.l1.c)
 
 $(P_OBJ)/components_Model_Automatic.l1.o: l1/components_Model_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_Model_Automatic.l1.c]
@@ -184,13 +133,89 @@ $(P_OBJ)/components_RandomGenerator_Automatic.l1.o: l1/components_RandomGenerato
 	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_RandomGenerator_Automatic.l1.c]
 	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_RandomGenerator_Automatic.l1.o l1/components_RandomGenerator_Automatic.l1.c)
 
-$(P_OBJ)/components_Driver_Automatic.l1.o: l1/components_Driver_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_Driver_Automatic.l1.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Driver_Automatic.l1.o l1/components_Driver_Automatic.l1.c)
+$(P_OBJ)/runnableModels_Driver_Automatic.l1.o: l1/runnableModels_Driver_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_Driver_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_Driver_Automatic.l1.o l1/runnableModels_Driver_Automatic.l1.c)
 
-$(P_OBJ)/components_TirePressureMonitoring_Automatic.l1.o: l1/components_TirePressureMonitoring_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
-	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\components_TirePressureMonitoring_Automatic.l1.c]
-	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TirePressureMonitoring_Automatic.l1.o l1/components_TirePressureMonitoring_Automatic.l1.c)
+$(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.l1.o: l1/runnableModels_TirePressureMonitoring_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_TirePressureMonitoring_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.l1.o l1/runnableModels_TirePressureMonitoring_Automatic.l1.c)
+
+$(P_OBJ)/runnableModels_ResetFunctionality_Automatic.l1.o: l1/runnableModels_ResetFunctionality_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_ResetFunctionality_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_ResetFunctionality_Automatic.l1.o l1/runnableModels_ResetFunctionality_Automatic.l1.c)
+
+$(P_OBJ)/runnableModels_ResetStateMachine_Automatic.l1.o: l1/runnableModels_ResetStateMachine_Automatic.l1.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\l1\runnableModels_ResetStateMachine_Automatic.l1.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_ResetStateMachine_Automatic.l1.o l1/runnableModels_ResetStateMachine_Automatic.l1.c)
+
+$(P_OBJ)/components_TireMean_Automatic.o: src/components_TireMean_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_TireMean_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TireMean_Automatic.o src/components_TireMean_Automatic.c)
+
+$(P_OBJ)/components_Reset_Automatic.o: src/components_Reset_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Reset_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Reset_Automatic.o src/components_Reset_Automatic.c)
+
+$(P_OBJ)/AscetTireSimApp_Automatic.o: src/AscetTireSimApp_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\AscetTireSimApp_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/AscetTireSimApp_Automatic.o src/AscetTireSimApp_Automatic.c)
+
+$(P_OBJ)/interfaces_interfaces_Automatic.o: src/interfaces_interfaces_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\interfaces_interfaces_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/interfaces_interfaces_Automatic.o src/interfaces_interfaces_Automatic.c)
+
+$(P_OBJ)/components_ErrorModule_Automatic.o: src/components_ErrorModule_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_ErrorModule_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_ErrorModule_Automatic.o src/components_ErrorModule_Automatic.c)
+
+$(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.o: src/runnableModels_TirePressureMonitoring_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_TirePressureMonitoring_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_TirePressureMonitoring_Automatic.o src/runnableModels_TirePressureMonitoring_Automatic.c)
+
+$(P_OBJ)/runnableModels_ResetFunctionality_Automatic.o: src/runnableModels_ResetFunctionality_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_ResetFunctionality_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_ResetFunctionality_Automatic.o src/runnableModels_ResetFunctionality_Automatic.c)
+
+$(P_OBJ)/runnableModels_Driver_Automatic.o: src/runnableModels_Driver_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_Driver_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_Driver_Automatic.o src/runnableModels_Driver_Automatic.c)
+
+$(P_OBJ)/runnableModels_Simulation_Automatic.o: src/runnableModels_Simulation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_Simulation_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_Simulation_Automatic.o src/runnableModels_Simulation_Automatic.c)
+
+$(P_OBJ)/runnableModels_sim_statemachine_Automatic.o: src/runnableModels_sim_statemachine_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_sim_statemachine_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_sim_statemachine_Automatic.o src/runnableModels_sim_statemachine_Automatic.c)
+
+$(P_OBJ)/components_Globals_Automatic.o: src/components_Globals_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Globals_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Globals_Automatic.o src/components_Globals_Automatic.c)
+
+$(P_OBJ)/components_Model_Automatic.o: src/components_Model_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_Model_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_Model_Automatic.o src/components_Model_Automatic.c)
+
+$(P_OBJ)/components_TireDeviation_Automatic.o: src/components_TireDeviation_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_TireDeviation_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_TireDeviation_Automatic.o src/components_TireDeviation_Automatic.c)
+
+$(P_OBJ)/components_RandomGenerator_Automatic.o: src/components_RandomGenerator_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_RandomGenerator_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_RandomGenerator_Automatic.o src/components_RandomGenerator_Automatic.c)
+
+$(P_OBJ)/components_RingBuffer_Automatic.o: src/components_RingBuffer_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_RingBuffer_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_RingBuffer_Automatic.o src/components_RingBuffer_Automatic.c)
+
+$(P_OBJ)/runnableModels_ResetStateMachine_Automatic.o: src/runnableModels_ResetStateMachine_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\runnableModels_ResetStateMachine_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/runnableModels_ResetStateMachine_Automatic.o src/runnableModels_ResetStateMachine_Automatic.c)
+
+$(P_OBJ)/components_SOS_state_Automatic.o: src/components_SOS_state_Automatic.c $(P_OBJ) $(CC_OPTIONS_FILE)
+	echo compiling [\\Mac\Home\Documents\ASCET\AscetTireSim_CGen\src\components_SOS_state_Automatic.c]
+	@$(CC) $(call CC_INPUT,$(P_OBJ)/components_SOS_state_Automatic.o src/components_SOS_state_Automatic.c)
 
 $(P_OBJ)/etasConfigTask.o: C:/ETAS/ASCET-DEVELOPER7.4/configuration/org.eclipse.osgi/50/0/.cp/platform/code/etasConfigTask.c $(P_OBJ) $(CC_OPTIONS_FILE)
 	echo compiling [C:\ETAS\ASCET-DEVELOPER7.4\configuration\org.eclipse.osgi\50\0\.cp\platform\code\etasConfigTask.c]

@@ -14,7 +14,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.v3 at (251, 335) {
+	methodArgumentIdentifier calc.v3 at (251, 255) {
 		label at (0, -1)
 		outPin {
 			connection_4
@@ -23,7 +23,7 @@ blockdiagramSpecification Main {
 			inPin
 		}
 	}
-	methodArgumentIdentifier calc.v2 at (251, 275) {
+	methodArgumentIdentifier calc.v2 at (251, 225) {
 		label at (0, -1)
 		outPin {
 			connection_3
@@ -37,19 +37,20 @@ blockdiagramSpecification Main {
 			bendpoints (80, 0), (80, 10)
 		}
 		inPin connection_3 {
-			bendpoints (70, 0), (70, -70)
+			bendpoints (70, 0), (70, -20)
 		}
 		inPin connection_4 {
-			bendpoints (80, 0), (80, -120)
+			bendpoints (80, 0), (80, -30)
+		}
+		inPin connection_9 {
+			bendpoints (120, 0), (120, -70)
 		}
 		outPin {
 			connection_6
 		}
 	}
 	division at (571, 216) {
-		inPin connection_6 {
-			bendpoints (0, 10)
-		}
+		inPin connection_6
 		inPin connection_5 {
 			bendpoints (20, 0), (20, -70)
 		}
@@ -57,7 +58,7 @@ blockdiagramSpecification Main {
 			connection_8
 		}
 	}
-	literal Numeric "3.0" at (481, 303) size (49, 0) {
+	literal Numeric "4.0" at (481, 303) size (49, 0) {
 		outPin {
 			connection_5
 		}
@@ -67,6 +68,15 @@ blockdiagramSpecification Main {
 		inPin connection_8
 		sequenceCall {
 			inPin connection_7
+		}
+	}
+	methodArgumentIdentifier calc.v4 at (261, 305) {
+		label at (0, -1)
+		outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
 		}
 	}
 }

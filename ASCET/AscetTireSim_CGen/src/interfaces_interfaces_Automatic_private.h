@@ -22,6 +22,11 @@
 #define interfaces_interfaces_delta_sfl_VAL interfaces_interfaces_delta_sfl
 #define interfaces_interfaces_delta_srr_VAL interfaces_interfaces_delta_srr
 #define interfaces_interfaces_delta_srl_VAL interfaces_interfaces_delta_srl
+#define interfaces_interfaces_sfr_VAL interfaces_interfaces_sfr
+#define interfaces_interfaces_sfl_VAL interfaces_interfaces_sfl
+#define interfaces_interfaces_srl_VAL interfaces_interfaces_srl
+#define interfaces_interfaces_srr_VAL interfaces_interfaces_srr
+#define interfaces_interfaces_noFailure_VAL interfaces_interfaces_noFailure
 #define interfaces_interfaces_mean_VAL interfaces_interfaces_mean
 /* ****************************************************************************
  * END: DEFINITION OF ACCESS MACROS

@@ -1,0 +1,388 @@
+classType runnableModels.TirePressureMonitoring
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_134, connection_136, connection_147, connection_153, connection_155, connection_165, connection_167
+		}
+	}
+	simpleIdentifier fr_failure at (621, 305) {
+		label at (0, -1)
+		inPin outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier rr_failure at (621, 385) {
+		label at (0, -1)
+		inPin outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier rl_failure at (621, 345) {
+		label at (0, -1)
+		inPin outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier fl_failure at (621, 265) {
+		label at (0, -1)
+		inPin outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	or at (721, 296) {
+		inPin connection_4 {
+			bendpoints (30, 0), (30, 30)
+		}
+		inPin connection_8
+		inPin connection_15 {
+			bendpoints (20, 0), (20, -20)
+		}
+		inPin connection_3 {
+			bendpoints (40, 0), (40, -50)
+		}
+		outPin {
+			connection_168
+		}
+	}
+	simpleIdentifier fl_failure at (441, 185) {
+		label at (0, -1)
+		inPin connection_148
+		outPin sequenceCall {
+			inPin connection_147
+		}
+	}
+	simpleIdentifier fr_failure at (451, 305) {
+		label at (0, -1)
+		inPin connection_154
+		outPin sequenceCall {
+			inPin connection_153
+		}
+	}
+	simpleIdentifier rl_failure at (451, 435) {
+		label at (0, -1)
+		inPin connection_156
+		outPin sequenceCall {
+			inPin connection_155
+		}
+	}
+	simpleIdentifier rr_failure at (461, 565) {
+		label at (0, -1)
+		inPin connection_166
+		outPin sequenceCall {
+			inPin connection_165
+		}
+	}
+	simpleIdentifier interfaces.interfaces.failure_detected at (841, 315) {
+		label at (0, -1)
+		inPin connection_168
+		sequenceCall {
+			inPin connection_167
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfl at (31, 35) {
+		label at (0, -1)
+		outPin {
+			connection_103
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfr at (31, 65) {
+		label at (0, -1)
+		outPin {
+			connection_102
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srr at (31, 95) {
+		label at (0, -1)
+		outPin {
+			connection_101
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfl at (141, 175) {
+		label at (-20, -1)
+		outPin {
+			connection_143
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfr at (121, 295) {
+		label at (0, -1)
+		outPin {
+			connection_149
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srl at (121, 415) {
+		label at (0, -1)
+		outPin {
+			connection_157
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srr at (111, 545) {
+		label at (0, -1)
+		outPin {
+			connection_161
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_FL at (141, 225) {
+		label at (0, -1)
+		inPin outPin {
+			connection_145
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RL at (111, 345) {
+		label at (0, -1)
+		inPin outPin {
+			connection_151
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RL at (111, 475) {
+		label at (0, -1)
+		inPin outPin {
+			connection_159
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RR at (101, 605) {
+		label at (0, -1)
+		inPin outPin {
+			connection_163
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier TireMean_instance at (181, 51) size (14, 8) {
+		label at (0, 1)
+		methodCall components.TireMean.calc {
+			argumentPin v1 at (left, 0) connection_103 {
+				bendpoints (50, 0), (50, 20)
+			}
+			argumentPin v3 at (left, 1) connection_102
+			argumentPin v2 at (left, 2) connection_101 {
+				bendpoints (50, 0), (50, -20)
+			}
+			argumentPin v4 at (left, 3) connection_142 {
+				bendpoints (50, 0), (50, -50)
+			}
+			returnPin at (right, 0) {
+				connection_135
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier mean at (391, 55) {
+		label at (0, -1)
+		inPin connection_135
+		outPin {
+			connection_137
+		}
+		sequenceCall {
+			inPin connection_134
+		}
+	}
+	simpleIdentifier interfaces.interfaces.mean at (501, 55) {
+		label at (0, -1)
+		inPin connection_137
+		sequenceCall {
+			inPin connection_136
+		}
+	}
+	simpleIdentifier mean at (61, 205) {
+		label at (0, -1)
+		inPin outPin {
+			connection_144
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier mean at (31, 325) {
+		label at (0, -1)
+		inPin outPin {
+			connection_150
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier mean at (21, 455) {
+		label at (0, -1)
+		inPin outPin {
+			connection_158
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier mean at (21, 585) {
+		label at (0, -1)
+		inPin outPin {
+			connection_162
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srl at (31, 135) {
+		label at (0, -1)
+		outPin {
+			connection_142
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (71, 255) {
+		label at (0, -1)
+		outPin {
+			connection_146
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier TireDeviation_instance at (241, 181) size (14, 8) {
+		label at (0, 1)
+		methodCall components.TireDeviation.calc {
+			argumentPin v_single at (left, 0) connection_143 {
+				bendpoints (20, 0), (20, 10)
+			}
+			argumentPin v_mean at (left, 2) connection_144
+			argumentPin limit at (left, 4) connection_145
+			argumentPin noFailure at (left, 6) connection_146 {
+				bendpoints (60, 0), (60, -10)
+			}
+			returnPin at (right, 0) {
+				connection_148
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier TireDeviation_instance_2 at (251, 301) size (14, 8) {
+		label at (0, 1)
+		methodCall components.TireDeviation.calc {
+			argumentPin v_single at (left, 0) connection_149 {
+				bendpoints (40, 0), (40, 10)
+			}
+			argumentPin v_mean at (left, 2) connection_150
+			argumentPin limit at (left, 4) connection_151
+			argumentPin noFailure at (left, 6) connection_152 {
+				bendpoints (110, 0), (110, -10)
+			}
+			returnPin at (right, 0) {
+				connection_154
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (51, 375) {
+		label at (0, -1)
+		outPin {
+			connection_152
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier TireDeviation_instance_3 at (251, 431) size (14, 8) {
+		label at (0, 1)
+		methodCall components.TireDeviation.calc {
+			argumentPin v_single at (left, 0) connection_157 {
+				bendpoints (40, 0), (40, 20)
+			}
+			argumentPin v_mean at (left, 2) connection_158
+			argumentPin limit at (left, 4) connection_159
+			argumentPin noFailure at (left, 6) connection_160 {
+				bendpoints (70, 0), (70, -10)
+			}
+			returnPin at (right, 0) {
+				connection_156
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (61, 505) {
+		label at (0, -1)
+		outPin {
+			connection_160
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier TireDeviation_instance_4 at (241, 561) size (14, 8) {
+		label at (0, 1)
+		methodCall components.TireDeviation.calc {
+			argumentPin v_single at (left, 0) connection_161 {
+				bendpoints (40, 0), (40, 20)
+			}
+			argumentPin v_mean at (left, 2) connection_162
+			argumentPin limit at (left, 4) connection_163
+			argumentPin noFailure at (left, 6) connection_164 {
+				bendpoints (80, 0), (80, -10)
+			}
+			returnPin at (right, 0) {
+				connection_166
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (31, 635) {
+		label at (0, -1)
+		outPin {
+			connection_164
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

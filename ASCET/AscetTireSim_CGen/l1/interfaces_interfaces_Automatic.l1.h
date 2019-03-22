@@ -34,6 +34,11 @@ typedef struct {
 	scalarWrapper_Obj* delta_sfl;
 	scalarWrapper_Obj* delta_srr;
 	scalarWrapper_Obj* delta_srl;
+	scalarWrapper_Obj* sfr;
+	scalarWrapper_Obj* sfl;
+	scalarWrapper_Obj* srl;
+	scalarWrapper_Obj* srr;
+	scalarWrapper_Obj* noFailure;
 	scalarWrapper_Obj* mean;
 } L1_interfaces_interfaces_Automatic_Class;
 

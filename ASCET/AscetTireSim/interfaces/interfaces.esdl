@@ -12,6 +12,13 @@ data interface interfaces {
 	real delta_srr;
 	real delta_srl;
 	
+	real sfr;
+	real sfl;
+	real srl;
+	real srr;
+
+	boolean noFailure;
+	
 	real mean;
 }
 

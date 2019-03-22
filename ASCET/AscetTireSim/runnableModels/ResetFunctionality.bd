@@ -1,0 +1,564 @@
+classType runnableModels.ResetFunctionality
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_112, connection_206, connection_208, connection_210, connection_212, connection_214, connection_205, connection_216, connection_218, connection_221, connection_223, connection_225, connection_227, connection_229, connection_220, connection_231, connection_265, connection_267, connection_236, connection_238, connection_240, connection_242, connection_244, connection_235, connection_246, connection_248, connection_251, connection_253, connection_255, connection_257, connection_259, connection_250, connection_261, connection_263
+		}
+	}
+	simpleIdentifier ResetButton at (-209, 115) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier Reset_instance at (41, 181) size (14, 8) {
+		label at (0, 1)
+		methodCall components.Reset.calc {
+			argumentPin reset at (left, 0) connection_2 {
+				bendpoints (200, 0)
+			}
+			argumentPin vrl at (left, 1) connection_82 {
+				bendpoints (100, 0), (100, 40)
+			}
+			argumentPin vrr at (left, 2) connection_83
+			argumentPin vfr at (left, 3) connection_85 {
+				bendpoints (20, 0), (20, -20)
+			}
+			argumentPin vfl at (left, 4) connection_84 {
+				bendpoints (90, 0), (90, -40)
+			}
+			returnPin at (right, 0) {
+				connection_113
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.vrl at (-209, 155) {
+		label at (0, -1)
+		outPin {
+			connection_82
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.vrr at (-189, 205) {
+		label at (0, -1)
+		outPin {
+			connection_83
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.vfl at (-189, 265) {
+		label at (0, -1)
+		outPin {
+			connection_84
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.vfr at (-149, 235) {
+		label at (0, -1)
+		outPin {
+			connection_85
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier restValid at (241, 185) {
+		label at (0, -1)
+		inPin connection_113
+		outPin sequenceCall {
+			inPin connection_112
+		}
+	}
+	simpleIdentifier restValid at (-179, 405) {
+		label at (0, -1)
+		inPin outPin {
+			connection_207
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (-159, 445) {
+		label at (0, -1)
+		inPin outPin {
+			connection_209
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfr at (-119, 475) {
+		label at (0, -1)
+		outPin {
+			connection_211
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.mean at (-179, 505) {
+		label at (0, -1)
+		outPin {
+			connection_213
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_FR at (-139, 565) {
+		label at (0, -1)
+		inPin outPin {
+			connection_215
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_FR at (151, 455) {
+		label at (0, -1)
+		inPin connection_217
+		outPin sequenceCall {
+			inPin connection_216
+		}
+	}
+	simpleIdentifier restValid at (261, 435) {
+		label at (0, -1)
+		inPin outPin {
+			connection_222
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (281, 465) {
+		label at (0, -1)
+		inPin outPin {
+			connection_224
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_sfl at (261, 495) {
+		label at (0, -1)
+		outPin {
+			connection_226
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.mean at (261, 515) {
+		label at (0, -1)
+		outPin {
+			connection_228
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_FL at (271, 545) {
+		label at (0, -1)
+		inPin outPin {
+			connection_230
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_FL at (541, 465) {
+		label at (0, -1)
+		inPin connection_232
+		outPin sequenceCall {
+			inPin connection_231
+		}
+	}
+	simpleIdentifier restValid at (-159, 655) {
+		label at (0, -1)
+		inPin outPin {
+			connection_237
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (-109, 685) {
+		label at (0, -1)
+		inPin outPin {
+			connection_239
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srr at (-169, 715) {
+		label at (0, -1)
+		outPin {
+			connection_241
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.mean at (-99, 745) {
+		label at (0, -1)
+		outPin {
+			connection_243
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RR at (-119, 775) {
+		label at (0, -1)
+		inPin outPin {
+			connection_245
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RR at (141, 665) {
+		label at (0, -1)
+		inPin connection_247
+		outPin sequenceCall {
+			inPin connection_246
+		}
+	}
+	simpleIdentifier restValid at (271, 675) {
+		label at (0, -1)
+		inPin outPin {
+			connection_252
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.d_T at (271, 705) {
+		label at (0, -1)
+		inPin outPin {
+			connection_254
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.delta_srl at (261, 735) {
+		label at (0, -1)
+		outPin {
+			connection_256
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.interfaces.mean at (221, 765) {
+		label at (0, -1)
+		outPin {
+			connection_258
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RL at (271, 795) {
+		label at (0, -1)
+		inPin outPin {
+			connection_260
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier components.Globals.limit_RL at (561, 705) {
+		label at (0, -1)
+		inPin connection_262
+		outPin sequenceCall {
+			inPin connection_261
+		}
+	}
+	complexIdentifier ResetStateMachine_instance at (-19, 411) size (14, 17) {
+		label at (0, 1)
+		methodCall components.ResetStateMachine.resetStateMachineStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_205
+			}
+		}
+		elementCall (components.ResetStateMachine.reset) {
+			argumentPin at (left, 2) connection_207 {
+				bendpoints (50, 0), (50, 30)
+			}
+			sequenceCall {
+				inPin connection_206
+			}
+		}
+		elementCall (components.ResetStateMachine.myDT) {
+			argumentPin at (left, 4) connection_209 {
+				bendpoints (40, 0), (40, 10)
+			}
+			sequenceCall {
+				inPin connection_208
+			}
+		}
+		elementCall (components.ResetStateMachine.delta_xx) {
+			argumentPin at (left, 7) connection_211 {
+				bendpoints (30, 0), (30, 10)
+			}
+			sequenceCall {
+				inPin connection_210
+			}
+		}
+		elementCall (components.ResetStateMachine.mean) {
+			argumentPin at (left, 10) connection_213 {
+				bendpoints (60, 0), (60, 10)
+			}
+			sequenceCall {
+				inPin connection_212
+			}
+		}
+		elementCall (components.ResetStateMachine.new_limit) {
+			returnPin at (right, 4) {
+				connection_217
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (components.ResetStateMachine.limit) {
+			argumentPin at (left, 13) connection_215 {
+				bendpoints (30, 0), (30, -20)
+			}
+			sequenceCall {
+				inPin connection_214
+			}
+		}
+		elementCall (components.ResetStateMachine.noFailure) {
+			returnPin at (right, 8) {
+				connection_219
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (151, 495) {
+		label at (0, -1)
+		inPin connection_219
+		sequenceCall {
+			inPin connection_218
+		}
+	}
+	complexIdentifier ResetStateMachine_instance_2 at (371, 401) size (14, 18) {
+		label at (0, 1)
+		methodCall components.ResetStateMachine.resetStateMachineStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_220
+			}
+		}
+		elementCall (components.ResetStateMachine.reset) {
+			argumentPin at (left, 3) connection_222
+			sequenceCall {
+				inPin connection_221
+			}
+		}
+		elementCall (components.ResetStateMachine.myDT) {
+			argumentPin at (left, 6) connection_224
+			sequenceCall {
+				inPin connection_223
+			}
+		}
+		elementCall (components.ResetStateMachine.delta_xx) {
+			argumentPin at (left, 9) connection_226
+			sequenceCall {
+				inPin connection_225
+			}
+		}
+		elementCall (components.ResetStateMachine.mean) {
+			argumentPin at (left, 12) connection_228 {
+				bendpoints (30, 0), (30, 10)
+			}
+			sequenceCall {
+				inPin connection_227
+			}
+		}
+		elementCall (components.ResetStateMachine.new_limit) {
+			returnPin at (right, 6) {
+				connection_232
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (components.ResetStateMachine.limit) {
+			argumentPin at (left, 15) connection_230 {
+				bendpoints (20, 0), (20, 10)
+			}
+			sequenceCall {
+				inPin connection_229
+			}
+		}
+		elementCall (components.ResetStateMachine.noFailure) {
+			returnPin at (right, 10) {
+				connection_266
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (601, 505) {
+		label at (0, -1)
+		inPin connection_268
+		sequenceCall {
+			inPin connection_267
+		}
+	}
+	complexIdentifier ResetStateMachine_instance_3 at (-19, 641) size (14, 15) {
+		label at (0, 1)
+		methodCall components.ResetStateMachine.resetStateMachineStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -30) {
+				inPin connection_235
+			}
+		}
+		elementCall (components.ResetStateMachine.reset) {
+			argumentPin at (left, 1) connection_237
+			sequenceCall {
+				inPin connection_236
+			}
+		}
+		elementCall (components.ResetStateMachine.myDT) {
+			argumentPin at (left, 3) connection_239 {
+				bendpoints (20, 0), (20, -10)
+			}
+			sequenceCall {
+				inPin connection_238
+			}
+		}
+		elementCall (components.ResetStateMachine.delta_xx) {
+			argumentPin at (left, 7) connection_241
+			sequenceCall {
+				inPin connection_240
+			}
+		}
+		elementCall (components.ResetStateMachine.mean) {
+			argumentPin at (left, 10) connection_243
+			sequenceCall {
+				inPin connection_242
+			}
+		}
+		elementCall (components.ResetStateMachine.new_limit) {
+			returnPin at (right, 2) {
+				connection_247
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (components.ResetStateMachine.limit) {
+			argumentPin at (left, 13) connection_245
+			sequenceCall {
+				inPin connection_244
+			}
+		}
+		elementCall (components.ResetStateMachine.noFailure) {
+			returnPin at (right, 7) {
+				connection_249
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (151, 715) {
+		label at (0, -1)
+		inPin connection_249
+		sequenceCall {
+			inPin connection_248
+		}
+	}
+	complexIdentifier ResetStateMachine_instance_4 at (371, 651) size (14, 17) {
+		label at (0, 1)
+		methodCall components.ResetStateMachine.resetStateMachineStatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-14, -36) {
+				inPin connection_250
+			}
+		}
+		elementCall (components.ResetStateMachine.reset) {
+			argumentPin at (left, 2) connection_252
+			sequenceCall {
+				inPin connection_251
+			}
+		}
+		elementCall (components.ResetStateMachine.myDT) {
+			argumentPin at (left, 4) connection_254 {
+				bendpoints (20, 0), (20, -10)
+			}
+			sequenceCall {
+				inPin connection_253
+			}
+		}
+		elementCall (components.ResetStateMachine.delta_xx) {
+			argumentPin at (left, 8) connection_256
+			sequenceCall {
+				inPin connection_255
+			}
+		}
+		elementCall (components.ResetStateMachine.mean) {
+			argumentPin at (left, 11) connection_258
+			sequenceCall {
+				inPin connection_257
+			}
+		}
+		elementCall (components.ResetStateMachine.new_limit) {
+			returnPin at (right, 5) {
+				connection_262
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (components.ResetStateMachine.limit) {
+			argumentPin at (left, 14) connection_260
+			sequenceCall {
+				inPin connection_259
+			}
+		}
+		elementCall (components.ResetStateMachine.noFailure) {
+			returnPin at (right, 11) {
+				connection_264
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.interfaces.noFailure at (561, 765) {
+		label at (0, -1)
+		inPin connection_264
+		sequenceCall {
+			inPin connection_263
+		}
+	}
+	simpleIdentifier test at (541, 505) {
+		label at (0, -1)
+		inPin connection_266
+		outPin {
+			connection_268
+		}
+		sequenceCall {
+			inPin connection_265
+		}
+	}
+}

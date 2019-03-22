@@ -10,7 +10,7 @@ type SOS_stateStatemachineStates is enum {
 
 class SOS_state {
 	integer x;
-	integer status;
+	public integer status;
 	@set
 	private real myDT;
 	real duration;
@@ -89,6 +89,7 @@ class SOS_state {
 				x = 0;
 				y = 0;
 				statelocation = 0.0;
+				status = 0;
 			}
 			transition aktiv == true to beep_short;
 		}

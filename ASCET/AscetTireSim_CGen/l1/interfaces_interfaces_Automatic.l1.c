@@ -25,6 +25,11 @@ void initClass_L1_interfaces_interfaces_Automatic (L1_interfaces_interfaces_Auto
     _ASCET_class->delta_sfl = initInstance_scalarWrapper((uint32)&interfaces_interfaces_delta_sfl_VAL, sizeof(float32), ASD_VARIABLE);
     _ASCET_class->delta_srr = initInstance_scalarWrapper((uint32)&interfaces_interfaces_delta_srr_VAL, sizeof(float32), ASD_VARIABLE);
     _ASCET_class->delta_srl = initInstance_scalarWrapper((uint32)&interfaces_interfaces_delta_srl_VAL, sizeof(float32), ASD_VARIABLE);
+    _ASCET_class->sfr = initInstance_scalarWrapper((uint32)&interfaces_interfaces_sfr_VAL, sizeof(float32), ASD_VARIABLE);
+    _ASCET_class->sfl = initInstance_scalarWrapper((uint32)&interfaces_interfaces_sfl_VAL, sizeof(float32), ASD_VARIABLE);
+    _ASCET_class->srl = initInstance_scalarWrapper((uint32)&interfaces_interfaces_srl_VAL, sizeof(float32), ASD_VARIABLE);
+    _ASCET_class->srr = initInstance_scalarWrapper((uint32)&interfaces_interfaces_srr_VAL, sizeof(float32), ASD_VARIABLE);
+    _ASCET_class->noFailure = initInstance_scalarWrapper((uint32)&interfaces_interfaces_noFailure_VAL, sizeof(uint8), ASD_VARIABLE);
     _ASCET_class->mean = initInstance_scalarWrapper((uint32)&interfaces_interfaces_mean_VAL, sizeof(float32), ASD_VARIABLE);
 }
 
@@ -43,7 +48,7 @@ static MethodList _ClassMethodList = {
 struct L1_interfaces_interfaces_Automatic_Obj* L1_interfaces_interfaces_AutomaticInstance = NULL;
 
 static ASDClassHeader L1_interfaces_interfaces_Automatic_ClassHeader = {
-	0, 0, 0, 10, &_ObjectMethodList, &_ClassMethodList
+	0, 0, 0, 15, &_ObjectMethodList, &_ClassMethodList
 };
 
 L1_interfaces_interfaces_Automatic_Class L1_interfaces_interfaces_Automatic_ClassObj = {{1, {&L1_interfaces_interfaces_Automatic_ClassHeader}, {0}}};
